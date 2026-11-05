@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297" font-family="Arial, Helvetica, sans-serif">
+<defs>
+ <pattern id="h" width="1.2" height="1.2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0V1.2" stroke="#000" stroke-width="0.25"/></pattern>
+ <pattern id="st" width="6" height="2" patternUnits="userSpaceOnUse"><rect width="6" height="2" fill="#d6cfc1"/><path d="M0 0H6M0 1H6M2 0V1M4.6 1V2" stroke="#a49b8b" stroke-width="0.12"/></pattern>
+</defs>
+<style>
+.c{fill:url(#h);stroke:#000;stroke-width:0.4}
+.o{fill:#fff;stroke:#000;stroke-width:0.3}
+.m{fill:none;stroke:#000;stroke-width:0.2}
+.bg{fill:#e2e2e2;stroke:#888;stroke-width:0.2}
+.tb{fill:none;stroke:#b5773a;stroke-width:0.7}
+.lt{fill:#ffb52e;stroke:#7a4d00;stroke-width:0.1}
+.d{fill:none;stroke:#000;stroke-width:0.15}
+.lv{fill:none;stroke:#000;stroke-width:0.15}
+.lx{font-size:2.1px}
+.dt{font-size:2.2px;text-anchor:middle}
+.rn{font-size:2.4px;font-weight:bold;text-anchor:middle}
+.sm{font-size:1.6px;text-anchor:middle}
+.nt{font-size:2.4px}
+</style>
+<rect width="420" height="297" fill="#fff"/>
+<rect x="10" y="10" width="400" height="277" fill="none" stroke="#000" stroke-width="0.5"/>
+
+<!-- Cut at x = 5.80 m (through the front door, hall, living room, bedroom 3 and the garden terrace), looking west. Left = south.
+     Paper X = 100 + 10y, Y = 200 - 10z. Hatched = cut. Grey = seen beyond the cut (west of it) -->
+
+<!-- BEYOND: small tree and clipped shrub in bed P1, bed P1 edge, stone cheek wall of the entry -->
+<path d="M70.5 202V185" stroke="#8a7a66" stroke-width="0.5"/>
+<circle cx="70.5" cy="176" r="9" fill="#cfe0c4" stroke="#8aa57c" stroke-width="0.2"/>
+<circle cx="71" cy="195.5" r="3.5" fill="#cfe0c4" stroke="#8aa57c" stroke-width="0.2"/>
+<rect x="67" y="201.5" width="12" height="4.5" fill="url(#st)" stroke="#888" stroke-width="0.2"/>
+<rect x="79" y="172" width="21" height="28" fill="url(#st)" stroke="#888" stroke-width="0.2"/>
+<!-- BEYOND: main stair (x 4.00-5.10), 16 risers x 200, 15 goings x 240, rising north -->
+<polygon class="bg" points="114,200 114,198 116.4,198 116.4,196 118.8,196 118.8,194 121.2,194 121.2,192 123.6,192 123.6,190 126,190 126,188 128.4,188 128.4,186 130.8,186 130.8,184 133.2,184 133.2,182 135.6,182 135.6,180 138,180 138,178 140.4,178 140.4,176 142.8,176 142.8,174 145.2,174 145.2,172 147.6,172 147.6,170 150,170 150,172.5 118,200"/>
+<!-- BEYOND: terrace pier PR-2 (x 0-0.60) and steel post PO-1 (x 4.925-5.075) -->
+<rect x="230" y="172" width="6" height="28.2" fill="url(#st)" stroke="#888" stroke-width="0.2"/>
+<rect x="232.25" y="172" width="1.5" height="28.2" fill="#555"/>
+
+<!-- GROUND: forecourt −0.60, steps, porch ±0.00; garden −0.15 -->
+<path d="M50 206H67M239 201.5H250" stroke="#000" stroke-width="0.6"/>
+<polygon class="c" points="67,206 67,204.5 71,204.5 71,203 75,203 75,201.5 79,201.5 79,200 79,208 67,208"/>
+<g class="lt"><rect x="66.6" y="204.9" width="0.4" height="0.8"/><rect x="70.6" y="203.4" width="0.4" height="0.8"/><rect x="74.6" y="201.9" width="0.4" height="0.8"/><rect x="78.6" y="200.4" width="0.4" height="0.8"/></g>
+<rect class="c" x="79" y="200" width="21" height="2"/>
+<!-- house ground-floor slab and placeholder foundations -->
+<rect class="c" x="100" y="200" width="100" height="2.5"/>
+<rect class="o" x="99" y="202.5" width="5" height="4"/><rect class="o" x="196" y="202.5" width="5" height="4"/>
+<!-- garden terrace slab −0.02, pad under the post -->
+<rect class="c" x="200" y="200.2" width="39" height="2"/>
+<rect class="o" x="230.5" y="202.2" width="4.5" height="3"/>
+
+<!-- SOUTH WALL (cut through the front door): pivot door to +2.80, wall above to +5.90 -->
+<rect x="100.4" y="172" width="0.6" height="28" fill="#26282a"/>
+<rect class="c" x="100" y="141" width="3" height="31"/>
+<!-- BALCONY / PORCH ROOF: slab +2.80 to +3.20, deck +3.15, glass balustrade 1.10, timber soffit with downlight -->
+<rect class="c" x="79" y="168" width="21" height="4"/>
+<path d="M79 168.5H100" stroke="#777" stroke-width="0.3"/>
+<rect x="79" y="157.5" width="0.6" height="10.5" fill="#bcd6e3" stroke="#3d86b5" stroke-width="0.2"/>
+<path class="tb" d="M79 172.3H100"/>
+<g class="lt"><circle cx="89.5" cy="172.8" r="0.6"/></g>
+<!-- FIRST-FLOOR SLAB (floor zone +2.80 to +3.20) -->
+<rect class="c" x="103" y="168" width="94" height="4"/>
+<!-- LOWER ROOF (y -1.50 to 4.94): +5.90 to +6.30, 1.50 overhang to the street, timber soffit and downlight -->
+<rect class="c" x="85" y="137" width="64.4" height="4"/>
+<path class="tb" d="M85 141.3H100"/>
+<g class="lt"><circle cx="92.5" cy="141.8" r="0.6"/></g>
+<!-- STEP WALL F-STEP and UPPER ROOF (y 4.94 to 11.20): +6.50 to +6.90, 1.20 overhang to the garden -->
+<rect class="c" x="147.9" y="135" width="3" height="6"/>
+<rect class="c" x="149.4" y="131" width="62.6" height="4"/>
+<path class="tb" d="M200 135.3H212"/>
+<path class="m" d="M150.9 136H197" stroke-dasharray="1 0.6"/>
+<!-- NORTH WALL (cut between the two garden doors): wall to +3.50, bedroom 3 window to +6.40 -->
+<rect class="c" x="197" y="165" width="3" height="36.5"/>
+<rect x="198.2" y="136" width="0.6" height="29" fill="#bcd6e3" stroke="#1d1d1d" stroke-width="0.2"/>
+<rect class="c" x="197" y="135" width="3" height="1"/>
+<!-- GARDEN TERRACE ROOF (y 10.00 to 13.90): +2.80 to +3.20, steel beam at y 13.30, timber soffit, downlights -->
+<rect class="c" x="200" y="168" width="39" height="4"/>
+<rect x="231.5" y="168.6" width="3" height="2.6" fill="#333"/>
+<path class="tb" d="M200 172.3H239"/>
+<g class="lt"><circle cx="213" cy="172.8" r="0.6"/><circle cx="226" cy="172.8" r="0.6"/></g>
+<path d="M200 167H201.5V168" fill="none" stroke="#000" stroke-width="0.3"/>
+<!-- INTERIOR WALLS CUT (above doors where the cut passes through a doorway) -->
+<rect class="c" x="148.8" y="172" width="1.2" height="7"/>
+<rect class="c" x="125.8" y="141" width="1.2" height="27"/>
+<rect class="c" x="148.8" y="141" width="1.2" height="6"/>
+<rect class="c" x="161.2" y="136" width="1.2" height="11"/>
+
+<!-- room names -->
+<text class="rn" x="107" y="194">HALL</text>
+<text class="rn" x="175" y="186">LIVING</text><text class="sm" x="175" y="189">ceiling +2.80</text>
+<text class="rn" x="113" y="155" font-size="2">EN-SUITE</text>
+<text class="rn" x="138" y="155" font-size="2">LINEN</text>
+<text class="sm" x="155.6" y="160" font-size="1.4">LANDING</text>
+<text class="rn" x="180" y="152">BEDROOM 3</text><text class="sm" x="180" y="155">ceiling +6.40</text>
+<text class="rn" x="89.5" y="190" font-size="2">PORCH</text>
+<text class="rn" x="89.5" y="165" font-size="2">BALCONY</text>
+<text class="rn" x="219" y="190" font-size="2">TERRACE</text>
+<text class="sm" x="135" y="196">main stair beyond</text>
+<text class="sm" x="73" y="211">steps</text>
+<text class="sm" x="86" y="181" fill="#555">stone cheek wall beyond</text>
+<text class="sm" x="234" y="166" fill="#555">beam</text>
+<text class="sm" x="123" y="133.5">roof step +6.30 / +6.90</text>
+
+<!-- levels -->
+<g class="lv"><path d="M213 131H246M150 137H246M201 141H246M80 157.5H246M240 168H246M240 172H246M240 200H246M240 206H246" stroke-dasharray="1.5 1"/></g>
+<g class="lx">
+ <text x="248" y="131.7">Upper roof top +6.90</text>
+ <text x="248" y="137.3">Lower roof top +6.30</text>
+ <text x="248" y="141.9">Lower roof soffit / ceiling +5.90</text>
+ <text x="248" y="158.2">Balustrade top +4.25</text>
+ <text x="248" y="168.4">First floor, terrace roof top +3.20</text>
+ <text x="248" y="172.9">Soffits, GF ceiling +2.80</text>
+ <text x="248" y="200.4">Ground floor, porch ±0.00</text>
+ <text x="248" y="206.7">Forecourt −0.60 · garden −0.15</text>
+</g>
+
+<!-- dimensions -->
+<g class="d">
+ <path d="M67 214H239M66 215L68 213M78 215L80 213M99 215L101 213M199 215L201 213M238 215L240 213M67 208V216M79 208V216M100 208V216M200 208V216M239 208V216"/>
+ <path d="M50 200V137M49 201L51 199M49 173L51 171M49 169L51 167M49 142L51 140M49 138L51 136M47 200H53M47 172H53M47 168H53M47 141H53M47 137H53"/>
+ <path d="M190 168V136M189 169L191 167M189 137L191 135"/>
+ <path d="M85 126H100M200 126H212M84 127L86 125M99 127L101 125M199 127L201 125M211 127L213 125M85 124V136M100 124V140M200 124V134M212 124V130"/>
+</g>
+<text class="dt" x="73" y="212.8" font-size="1.8">1.20</text>
+<text class="dt" x="89.5" y="212.8">2.10</text>
+<text class="dt" x="150" y="212.8">10.00</text>
+<text class="dt" x="219.5" y="212.8">3.90</text>
+<text class="dt" transform="translate(48.6 186) rotate(-90)">2.80</text>
+<text class="dt" font-size="1.4" transform="translate(48.6 170) rotate(-90)">0.40</text>
+<text class="dt" transform="translate(48.6 154.5) rotate(-90)">2.70</text>
+<text class="dt" font-size="1.4" transform="translate(48.6 139) rotate(-90)">0.40</text>
+<text class="dt" font-size="1.8" transform="translate(188.6 152) rotate(-90)">3.20 clear</text>
+<text class="dt" x="92.5" y="124.8" font-size="1.8">1.50</text>
+<text class="dt" x="206" y="124.8" font-size="1.8">1.20</text>
+<text x="67" y="222" font-size="2.2" text-anchor="middle">S</text><text x="239" y="222" font-size="2.2" text-anchor="middle">N</text>
+
+<text x="150" y="238" font-size="5" font-weight="bold" text-anchor="middle">SECTION A–A THROUGH THE ENTRY, HOUSE AND TERRACE (LOOKING WEST)  1:100</text>
+
+<g class="nt">
+ <text x="300" y="50" font-weight="bold" font-size="3">NOTES</text>
+ <text x="300" y="56">Cut at x = 5.80 m, see the plans. Hatched =</text>
+ <text x="300" y="60">cut; grey = seen beyond (west of the cut).</text>
+ <text x="300" y="64">From the street: forecourt −0.60, 4 lit risers</text>
+ <text x="300" y="68">x 150, porch ±0.00 under the balcony slab</text>
+ <text x="300" y="72">(soffit +2.80, deck +3.15, glass to +4.25).</text>
+ <text x="300" y="76">Lower roof +6.30 cantilevers 1.50 to the</text>
+ <text x="300" y="80">street; it steps up to the upper roof (+6.90)</text>
+ <text x="300" y="84">at the landing wall (F-STEP, steel beam).</text>
+ <text x="300" y="88">Ceilings: GF 2.80; FF south rooms 2.70;</text>
+ <text x="300" y="92">FF north rooms 3.20 (ceiling +6.40).</text>
+ <text x="300" y="96">Garden terrace roof: 3.90 deep, steel beam</text>
+ <text x="300" y="100">on stone piers and a post, 0.60 cantilever.</text>
+ <text x="300" y="104">Orange = warm LED downlights in the timber</text>
+ <text x="300" y="108">soffits and riser lights in the steps.</text>
+ <text x="300" y="112">The garage stair section of v2 is unchanged</text>
+ <text x="300" y="116">(15 R x 190, 14 G x 250); the garage and rec</text>
+ <text x="300" y="120">room are now 3.20 high inside under the</text>
+ <text x="300" y="124">shared +6.30 roof (rec room ceiling +5.90).</text>
+ <text x="300" y="128">Structure shown is indicative: engineer to</text>
+ <text x="300" y="132">design all cantilevers, beams and footings.</text>
+</g>
+
+<g stroke="#000" stroke-width="0.2">
+ <rect x="300" y="236" width="10" height="2" fill="#000"/><rect x="310" y="236" width="10" height="2" fill="#fff"/><rect x="320" y="236" width="10" height="2" fill="#000"/><rect x="330" y="236" width="10" height="2" fill="#fff"/><rect x="340" y="236" width="10" height="2" fill="#000"/>
+</g>
+<g font-size="2.2" text-anchor="middle"><text x="300" y="242">0</text><text x="310" y="242">1</text><text x="320" y="242">2</text><text x="330" y="242">3</text><text x="340" y="242">4</text><text x="350" y="242">5 m</text></g>
+
+<rect x="300" y="248" width="105" height="34" fill="none" stroke="#000" stroke-width="0.35"/>
+<path d="M300 257H405M300 266H405M300 274H405" stroke="#000" stroke-width="0.2"/>
+<text x="303" y="254.5" font-size="3.2" font-weight="bold">FAMILY HOUSE v3 · dark modern · 394 m² gross</text>
+<text x="303" y="263" font-size="3.2" font-weight="bold">08  SECTION A–A</text>
+<text x="303" y="271.5" font-size="2.6">Scale 1:100 at A3 · dimensions in metres</text>
+<text x="303" y="279.5" font-size="2.6">2026-10-23 · Rev C · concept design, not for construction</text>
+</svg>

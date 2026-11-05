@@ -1,0 +1,25 @@
+In the folder v2 you will find the current design of a family home: the drawings, design.json, README.md and the brief that produced it (v2/prompt.txt). Please read v2 first, including its README.
+
+In the folder ref you will find two photos of a modern house whose style I love:
+- ref/front.jpg: the street front.
+- ref/side.jpg: the side and garden, with a covered terrace.
+Please look at both carefully. I do not want a copy of that house; I want my house redesigned in its style.
+
+What I like in these photos, and want in my house:
+1. Flat roofs with thin, deep cantilevered overhangs, stacked as separate boxes at different heights, so the street front has depth and a strong silhouette.
+2. A covered, recessed entry, framed by a stone pier, with a tall dark door and floor-to-ceiling glass beside it.
+3. Large floor-to-ceiling windows in dark frames, grouped in clear vertical and horizontal lines.
+4. Materials: dark charcoal panel cladding as the main material, natural split-face stone on piers and feature walls, warm timber soffits under the overhangs, glass balustrades on any balcony or roof terrace.
+5. A first-floor balcony or roof terrace on the street side, over the entry or the garage.
+6. A covered garden terrace off the living and dining rooms, under an extended roof, opening through big glass doors.
+7. Warm downlights in the soffits (draw them as fittings; no rendering needed).
+8. The landscaping that makes the photos look finished: raised planting beds with low stone or concrete edging along the street front, wide entry steps with lights in the risers, a paved forecourt and path to the door, the driveway to the side-entry garage, lawn, and a few small trees or shrubs placed to frame the entry (named simply, e.g. "small tree", "low shrubs"; no species list needed). Show it on the ground floor plan (or a separate site plan), the elevations and the sample view.
+
+Keep from v2: every room (sizes may move a little), the L-shape, the two-car garage with its SIDE entry, the door from the garage into the utility, and the rec room above the garage with its own stair from inside the garage. The garage wing must read as part of one design with the house (shared roof lines and fascia, the same materials and window language). Replace the butterfly roof with flat roofs. Keep it buildable and honest: no structure invented beyond what the drawings need, and say where an engineer would be needed.
+
+Deliverables, saved in the current folder (NOT in v2 or ref), with the same file names and the same design.json layout as v2:
+- Updated drawings as SVG files at 1:100 with dimensions: ground floor plan, first floor plan, roof plan, four elevations with the materials marked, one section, and a sample view of the finished home from the street corner (a hand-drawn style SVG is fine; do not try to make a photo).
+- design.json: the whole building as data in millimetres (same conventions as v2), describing exactly the same building as the drawings, including every overhang, canopy, balcony, terrace roof, stone pier and balustrade, plus a "landscape" section (planting beds with their outlines and edge heights, steps, paved areas, driveway, lawn, trees and shrubs as simple positions with a height and spread).
+- README.md: what changed from v2 and why (in plain words, and how each photo influenced it), every room with its size, the materials, and anything you could not do.
+
+Write design.json first, then the drawings, then the README.

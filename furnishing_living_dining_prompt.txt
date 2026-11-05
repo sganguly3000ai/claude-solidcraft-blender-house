@@ -1,0 +1,38 @@
+You designed this family home earlier. It is now a measured 3D model, and I want to walk through it furnished. This run is for ONE space only: the open-plan living room and dining area on the ground floor. Other rooms come later.
+
+In this folder:
+- rooms_living_dining.json: the two rooms as data, cut from your own design.json (millimetres, absolute coordinates, z = 0 = ground-floor finished floor). It has the room outlines (inside faces of the walls), the ceiling height, every door and window on their walls, the neighbouring rooms (the kitchen is open to the dining area), the main stair next door and the covered garden terrace outside the big sliding doors.
+- ref/front.jpg and ref/side.jpg: the two photos whose style the house follows (outside only).
+
+Please furnish and light the living room and the dining area:
+1. Living: a seating group facing the garden and the terrace doors (D02), a rug, a coffee table, side tables, floor or table lamps, a media or storage unit, and one or two pieces of art on the walls.
+2. Dining: a table for six to eight, chairs, a pendant light over the table, and a sideboard. People walk from here out through the dining sliders (D23) to the terrace: keep that route open.
+3. Fixtures: ceiling downlights in both rooms, curtains or blinds at the big glass (D02, D23, W07), and any built-in joinery you think belongs.
+4. Style: warm and modern, calm and uncluttered, in earth-tone colours (sand, clay, terracotta, olive, warm greys) and natural materials (oak, linen, wool, leather, stone), to suit a dark charcoal, stone and timber house like the one in the photos.
+
+Rules:
+- Everything stays inside the two room outlines and below the ceiling. Nothing goes into the kitchen (x 9700 and east of it, y 6200 and north of it) or the hall.
+- Keep walkways at least 900 mm wide between the doors D05, D06, D07, D10, the sliders D02 and D23, and the kitchen. Keep a clear 900 x 900 mm square on the room side of every door (the data does not say which way doors swing). Do not block the fixed glazing W07 with tall pieces.
+- Use real, typical furniture sizes.
+- Keep it honest: if something does not fit, say so instead of forcing it.
+
+Deliverables, saved in this folder:
+- furnishing.json, in this layout:
+  {
+    "rooms": ["Living (open plan)", "Dining (open plan, incl. passage to utility)"],
+    "items": [
+      {"id": "LV-SOFA-1", "room": "Living (open plan)", "kind": "sofa", "name": "three-seat sofa",
+       "x": [from, to], "y": [from, to], "z_base": 0, "height": 800, "faces": "north",
+       "material": "plain words, e.g. oatmeal wool, oiled oak legs", "colour": "#rrggbb"}
+    ],
+    "lights": [
+      {"id": "DN-LV-1", "room": "...", "kind": "downlight | pendant | floor lamp | table lamp | wall light",
+       "x": 0, "y": 0, "z": 2800, "colour_temperature_k": 2700, "note": ""}
+    ],
+    "walkways": [{"between": ["D06", "D02"], "narrowest_mm": 0, "where": [x, y]}],
+    "not_checked": ["plain sentences: what you did not check"]
+  }
+  Every item is a box in plan: x and y give its footprint (absolute coordinates, from smaller to larger), z_base and height give its bottom and height. "faces" is the direction a person sits or looks from it (north = towards the garden), or "none". Art and curtains are thin boxes against their wall. Ids are unique.
+- README.md, at most 300 words: the layout in plain words, why the seating faces where it does, and what you would ask me.
+
+Do not make drawings: I will draw the plan from your data. Write furnishing.json first, then README.md.

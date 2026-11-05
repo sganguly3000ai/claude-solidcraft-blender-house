@@ -1,0 +1,257 @@
+{
+  "source": "run1/furnishing.json (Claude, 2026-10-26): the dining area as already furnished, for context only; do not change it",
+  "items": [
+    {
+      "id": "DN-TAB-1",
+      "room": "Dining (open plan, incl. passage to utility)",
+      "kind": "dining table",
+      "name": "dining table 2000 x 1000 for six (eight with end chairs)",
+      "x": [
+        6800,
+        8800
+      ],
+      "y": [
+        7100,
+        8100
+      ],
+      "z_base": 0,
+      "height": 740,
+      "faces": "none",
+      "material": "solid oiled oak",
+      "colour": "#a67c52"
+    },
+    {
+      "id": "DN-CHAIR-1",
+      "room": "Dining (open plan, incl. passage to utility)",
+      "kind": "dining chair",
+      "name": "dining chair, south 1",
+      "x": [
+        6950,
+        7450
+      ],
+      "y": [
+        6550,
+        7100
+      ],
+      "z_base": 0,
+      "height": 800,
+      "faces": "north",
+      "material": "oak frame, clay leather seat",
+      "colour": "#a8613f"
+    },
+    {
+      "id": "DN-CHAIR-2",
+      "room": "Dining (open plan, incl. passage to utility)",
+      "kind": "dining chair",
+      "name": "dining chair, south 2",
+      "x": [
+        7550,
+        8050
+      ],
+      "y": [
+        6550,
+        7100
+      ],
+      "z_base": 0,
+      "height": 800,
+      "faces": "north",
+      "material": "oak frame, clay leather seat",
+      "colour": "#a8613f"
+    },
+    {
+      "id": "DN-CHAIR-3",
+      "room": "Dining (open plan, incl. passage to utility)",
+      "kind": "dining chair",
+      "name": "dining chair, south 3",
+      "x": [
+        8150,
+        8650
+      ],
+      "y": [
+        6550,
+        7100
+      ],
+      "z_base": 0,
+      "height": 800,
+      "faces": "north",
+      "material": "oak frame, clay leather seat",
+      "colour": "#a8613f"
+    },
+    {
+      "id": "DN-CHAIR-4",
+      "room": "Dining (open plan, incl. passage to utility)",
+      "kind": "dining chair",
+      "name": "dining chair, north 1",
+      "x": [
+        6950,
+        7450
+      ],
+      "y": [
+        8100,
+        8650
+      ],
+      "z_base": 0,
+      "height": 800,
+      "faces": "south",
+      "material": "oak frame, clay leather seat",
+      "colour": "#a8613f"
+    },
+    {
+      "id": "DN-CHAIR-5",
+      "room": "Dining (open plan, incl. passage to utility)",
+      "kind": "dining chair",
+      "name": "dining chair, north 2",
+      "x": [
+        7550,
+        8050
+      ],
+      "y": [
+        8100,
+        8650
+      ],
+      "z_base": 0,
+      "height": 800,
+      "faces": "south",
+      "material": "oak frame, clay leather seat",
+      "colour": "#a8613f"
+    },
+    {
+      "id": "DN-CHAIR-6",
+      "room": "Dining (open plan, incl. passage to utility)",
+      "kind": "dining chair",
+      "name": "dining chair, north 3",
+      "x": [
+        8150,
+        8650
+      ],
+      "y": [
+        8100,
+        8650
+      ],
+      "z_base": 0,
+      "height": 800,
+      "faces": "south",
+      "material": "oak frame, clay leather seat",
+      "colour": "#a8613f"
+    },
+    {
+      "id": "DN-SIDE-1",
+      "room": "Dining (open plan, incl. passage to utility)",
+      "kind": "sideboard",
+      "name": "sideboard on the south wall",
+      "x": [
+        6500,
+        8400
+      ],
+      "y": [
+        5000,
+        5450
+      ],
+      "z_base": 0,
+      "height": 750,
+      "faces": "north",
+      "material": "oak veneer, stone top",
+      "colour": "#8f6a48"
+    },
+    {
+      "id": "DN-ART-1",
+      "room": "Dining (open plan, incl. passage to utility)",
+      "kind": "art",
+      "name": "framed artwork above the sideboard",
+      "x": [
+        6900,
+        8000
+      ],
+      "y": [
+        5000,
+        5040
+      ],
+      "z_base": 1350,
+      "height": 800,
+      "faces": "north",
+      "material": "canvas, terracotta and olive, oak frame",
+      "colour": "#b5653f"
+    },
+    {
+      "id": "DN-CURT-1",
+      "room": "Dining (open plan, incl. passage to utility)",
+      "kind": "curtain",
+      "name": "ceiling-track curtain at D23",
+      "x": [
+        6400,
+        9600
+      ],
+      "y": [
+        9600,
+        9700
+      ],
+      "z_base": 20,
+      "height": 2780,
+      "faces": "none",
+      "material": "heavy undyed linen",
+      "colour": "#e3dacb"
+    }
+  ],
+  "lights": [
+    {
+      "id": "DN-DN-1",
+      "room": "Dining (open plan, incl. passage to utility)",
+      "kind": "downlight",
+      "x": 7000,
+      "y": 9000,
+      "z": 2800,
+      "colour_temperature_k": 2700,
+      "note": "dimmable"
+    },
+    {
+      "id": "DN-DN-2",
+      "room": "Dining (open plan, incl. passage to utility)",
+      "kind": "downlight",
+      "x": 8800,
+      "y": 9000,
+      "z": 2800,
+      "colour_temperature_k": 2700,
+      "note": "dimmable"
+    },
+    {
+      "id": "DN-DN-3",
+      "room": "Dining (open plan, incl. passage to utility)",
+      "kind": "downlight",
+      "x": 7450,
+      "y": 5700,
+      "z": 2800,
+      "colour_temperature_k": 2700,
+      "note": "over the sideboard"
+    },
+    {
+      "id": "DN-DN-4",
+      "room": "Dining (open plan, incl. passage to utility)",
+      "kind": "downlight",
+      "x": 9050,
+      "y": 5700,
+      "z": 2800,
+      "colour_temperature_k": 2700,
+      "note": "near D07"
+    },
+    {
+      "id": "DN-DN-5",
+      "room": "Dining (open plan, incl. passage to utility)",
+      "kind": "downlight",
+      "x": 10450,
+      "y": 5600,
+      "z": 2800,
+      "colour_temperature_k": 2700,
+      "note": "passage to utility"
+    },
+    {
+      "id": "PD-DN-1",
+      "room": "Dining (open plan, incl. passage to utility)",
+      "kind": "pendant",
+      "x": 7800,
+      "y": 7600,
+      "z": 1500,
+      "colour_temperature_k": 2700,
+      "note": "linear rattan or clay pendant, ~1200 long, bottom 760 mm above the table top"
+    }
+  ]
+}

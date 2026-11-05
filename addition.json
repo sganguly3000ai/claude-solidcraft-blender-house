@@ -1,0 +1,105 @@
+{
+  "project": "Dream It Design It: addition v1 (two top boxes + portico on the main house, east stair and lift tower)",
+  "base_design": "design.json (unchanged)",
+  "model_name": "home_v5",
+  "units": "mm; design coordinates (x east, y north, z up, z 0 = ground-floor level). Heights given as 'roof+N' follow the parameter upper_roof_top (default 6900).",
+  "roof_level": 6900,
+
+  "house_changes": {
+    "glass_to_door": ["W21"],
+    "glass_to_door_note": "the first-floor landing's east slot W21 (already floor to ceiling) becomes a glass door into the new lobby: same opening, no wall change",
+    "roof_notches": [
+      { "roof": "RF-2", "x": [14030, 14620], "y": [5980, 7560], "z": ["roof-450", "roof+50"], "why": "the upper roof's 0.6 m east overhang makes room for the lift shaft" }
+    ],
+    "landscape_cuts": [
+      { "parts": ["Lawn_L3", "Pave_SP"], "x": [14000, 15500], "y": [4550, 7540], "why": "the glass link stands here" },
+      { "parts": ["Lawn_L3", "Pave_SP"], "x": [15500, 20150], "y": [4940, 7540], "why": "the stair tower stands here" }
+    ]
+  },
+
+  "top_boxes": [
+    { "id": "TB-W", "x": [900, 5100], "y": [4960, 8860], "wall": 200, "height": 2700, "material": "charcoal_panel",
+      "roof": { "x": [0, 6000], "y": [4060, 9760], "thickness": 400 },
+      "glazing": [ { "wall": "S", "from": 1300, "to": 4700, "z": [100, 2500] }, { "wall": "N", "from": 1300, "to": 4700, "z": [100, 2500] } ],
+      "doors": [ { "wall": "E", "from": 6200, "to": 7700, "z": [0, 2400], "kind": "glass", "to_space": "portico terrace" } ] },
+    { "id": "TB-E", "x": [8900, 13100], "y": [4960, 8860], "wall": 200, "height": 2700, "material": "charcoal_panel",
+      "roof": { "x": [8000, 14000], "y": [4060, 9760], "thickness": 400 },
+      "glazing": [ { "wall": "S", "from": 9300, "to": 12700, "z": [100, 2500] }, { "wall": "N", "from": 9300, "to": 12700, "z": [100, 2500] } ],
+      "doors": [ { "wall": "W", "from": 6200, "to": 7700, "z": [0, 2400], "kind": "glass", "to_space": "portico terrace" },
+                 { "wall": "E", "from": 5160, "to": 5960, "z": [0, 2100], "kind": "glass", "to_space": "roof walkway to the tower" } ] }
+  ],
+
+  "portico": { "x": [5100, 8900], "y": [4960, 8860], "z": [2400, 2700], "note": "flat roof between the two boxes, spanning wall to wall, its top under the box roofs' overhangs" },
+  "pavers": [
+    { "id": "terrace", "x": [5100, 8900], "y": [4960, 8860] },
+    { "id": "walk_roof", "x": [13100, 14600], "y": [4940, 5960] },
+    { "id": "walk_link", "x": [14600, 15500], "y": [4940, 5960] }
+  ],
+  "pavers_thickness": 50,
+  "railings": {
+    "height": 1100, "thickness": 20, "note": "frameless glass on the pavers, like the street balcony",
+    "runs": [
+      { "id": "terrace_S", "x": [5100, 8900], "y": [4960, 4980] },
+      { "id": "terrace_N", "x": [5100, 8900], "y": [8840, 8860] }
+    ]
+  },
+
+  "walkway": {
+    "note": "revision 2 (Sam 2026-10-25): the roof-level walkway from the east top box to the tower is glass-enclosed and roofed; its roof sits lower than the top boxes' roofs (levels stay different) but its front edge is on the same line as theirs (y 4060). Replaces the two walkway railings of revision 1.",
+    "glass": [
+      { "id": "S", "x": [13100, 15500], "y": [4940, 4964], "z": [50, 2700] },
+      { "id": "N", "x": [13100, 14050], "y": [5960, 5984], "z": [50, 2700] }
+    ],
+    "glass_note": "the lift shaft's south pane closes the north side from x 14050 to the tower; the glass rises to the roofs above it (the east top box's overhang up to x 14000, the connection roof beyond)",
+    "roof": { "x": [14000, 15500], "y": [4060, 7640], "z": [2700, 2900] },
+    "roof_back_note": "revision 3b (Sam 2026-10-25): back edge y 7540 -> 7640, in one plane with the tower roof's back edge (front edges were already both at 4060)",
+    "roof_note": "revision 3 (Sam 2026-10-25, from a SolidCraft screenshot: 'we did not need 3 levels of roof'): ONE connection roof over the walkway AND the lift shaft, at the lift shaft's roof level (was: a lower walkway roof plus a separate lift roof). It starts at the east top box's roof edge (x 14000). Roof levels now: top boxes = tower (roof+3100), connection (roof+2900)."
+  },
+
+  "link": {
+    "note": "glass link between the house (east face x 14000) and the tower (west face x 15500): lobby in the south part on all levels; the glass lift in the north part",
+    "slabs": [
+      { "id": "GF", "x": [14000, 15500], "y": [4550, 7540], "z": ["base", 0] },
+      { "id": "FF", "x": [14000, 15476], "y": [4574, 5980], "z": [2800, 3200] },
+      { "id": "ROOF", "x": [14600, 15500], "y": [4940, 5980], "z": ["roof-400", "roof"] }
+    ],
+    "glass": [
+      { "id": "S", "x": [14000, 15500], "y": [4550, 4574], "z": [0, 5900] },
+      { "id": "E", "x": [15476, 15500], "y": [4574, 4940], "z": [0, 5900] }
+    ]
+  },
+
+  "lift": {
+    "shaft": { "x": [14050, 15450], "y": [6000, 7540], "pane": 24, "z": [0, "roof+2700"], "roof_thickness": 0, "roof_note": "revision 3: no roof of its own; the walkway's connection roof covers the shaft" },
+    "car": { "x": [14200, 15300], "y": [6150, 7390], "height": 2200, "note": "about 1.0 x 1.25 m inside, a common home-lift size (unchecked); shown at the ground floor" },
+    "stops": [0, 3200, "roof"]
+  },
+
+  "tower": {
+    "x": [15500, 20150], "y": [4940, 7540], "wall": 200, "material": "stone", "top": "roof+2700",
+    "roof": { "x": [15500, 20250], "y": [4060, 7640], "thickness": 400, "note": "revision 2: front edge brought forward from y 4840 to 4060, the top boxes' front overhang line" },
+    "doors_to_lobby": { "wall": "W", "y": [5180, 5980], "levels": [[0, 2100], [3200, 5300], ["roof", "roof+2100"]] },
+    "garden_door": { "wall": "N", "x": [15900, 16800], "z": [0, 2100] },
+    "slot_window": { "wall": "E", "y": [5940, 6540], "z": [600, "roof+2400"] }
+  },
+
+  "stair": {
+    "note": "switchback inside the tower: floor landings at the west end, half landings at the east end, two flights side by side",
+    "bands": { "rises_east": [5140, 6140], "rises_west": [6340, 7340] },
+    "floor_landing_x": [15700, 16700], "half_landing_x": [18950, 19950], "flight_end_x": 18950,
+    "going": 250, "tread_thickness": 300,
+    "storeys": [ { "from": 0, "to": 3200, "risers": 16 }, { "from": 3200, "to": "roof", "risers": 20 } ]
+  },
+
+  "rooms": [
+    { "name": "Top room west", "x": [1100, 4900], "y": [5160, 8660], "z": ["roof", "roof+2700"] },
+    { "name": "Top room east", "x": [9100, 12900], "y": [5160, 8660], "z": ["roof", "roof+2700"] },
+    { "name": "Link lobby, ground floor", "x": [14000, 15500], "y": [4574, 7540], "z": [0, 2800] },
+    { "name": "Link lobby, first floor", "x": [14000, 15500], "y": [4574, 7540], "z": [3200, "roof-400"] },
+    { "name": "Roof walkway", "x": [13100, 15500], "y": [4964, 5960], "z": ["roof", "roof+2700"] },
+    { "name": "Stair tower, ground floor", "x": [15700, 19950], "y": [5140, 7340], "z": [0, 3000] },
+    { "name": "Stair tower, first floor", "x": [15700, 19950], "y": [5140, 7340], "z": [3200, "roof-200"] },
+    { "name": "Stair tower, roof level", "x": [15700, 19950], "y": [5140, 7340], "z": ["roof", "roof+2700"] }
+  ],
+  "rooms_note": "revision 3c (2026-10-25): one room per floor for the lobby and the tower (Blender lights each floor; was one light at the top, the ground-floor lobby read dark). Used only by the Blender dressing (lights, inside faces); no effect on the SolidCraft model"
+}

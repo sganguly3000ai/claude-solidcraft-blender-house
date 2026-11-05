@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297" font-family="Arial, Helvetica, sans-serif">
+<defs>
+ <pattern id="cp" width="12" height="6" patternUnits="userSpaceOnUse"><rect width="12" height="6" fill="#4a4d52"/><path d="M0 0H12M0 0V6" stroke="#2c2e31" stroke-width="0.2"/></pattern>
+ <pattern id="st" width="6" height="2" patternUnits="userSpaceOnUse"><rect width="6" height="2" fill="#b6ab95"/><path d="M0 0H6M0 1H6M2 0V1M4.6 1V2" stroke="#7d7464" stroke-width="0.12"/></pattern>
+ <pattern id="tb" width="1" height="2" patternUnits="userSpaceOnUse"><rect width="1" height="2" fill="#c08a52"/><path d="M0 0V2" stroke="#8a5d30" stroke-width="0.1"/></pattern>
+</defs>
+<style>
+.o{fill:none;stroke:#000;stroke-width:0.35}
+.g{fill:#d3e3ec;stroke:#1d1d1d;stroke-width:0.4}
+.ob{fill:#e7eef2;stroke:#1d1d1d;stroke-width:0.4}
+.m{fill:none;stroke:#1d1d1d;stroke-width:0.3}
+.fa{fill:#232426;stroke:#000;stroke-width:0.2}
+.gb{fill:#bcd6e3;fill-opacity:0.45;stroke:#3d86b5;stroke-width:0.3}
+.sto{fill:url(#st);stroke:#000;stroke-width:0.25}
+.lt{fill:#ffb52e;stroke:#7a4d00;stroke-width:0.1}
+.tr{fill:#7fae6a;fill-opacity:0.4;stroke:#3f6a30;stroke-width:0.25}
+.sh{fill:#6f9a58;fill-opacity:0.85;stroke:#3f6a30;stroke-width:0.2}
+.lv{fill:none;stroke:#000;stroke-width:0.15}
+.d{fill:none;stroke:#000;stroke-width:0.15}
+.lx{font-size:2.1px}
+.dt{font-size:2.2px;text-anchor:middle}
+.nt{font-size:2.4px}
+.tg{fill:#fff;stroke:#000;stroke-width:0.25}
+.tt{font-size:2.6px;font-weight:bold;text-anchor:middle}
+</style>
+<rect width="420" height="297" fill="#fff"/>
+<rect x="10" y="10" width="400" height="277" fill="none" stroke="#000" stroke-width="0.5"/>
+
+<!-- Viewed from the south (street). Left = west. 1 m = 10 mm. Paper X = 40 + 10x, Y = 200 - 10z -->
+
+<!-- UPPER BOX (north part of the house, set back 4.94): wall band above the lower roof and its fascia -->
+<rect x="40" y="135" width="140" height="2" fill="url(#cp)"/>
+<rect class="fa" x="34" y="131" width="152" height="4"/>
+
+<!-- HOUSE SOUTH FACE: charcoal panels; stone beside the front door -->
+<rect x="40" y="141" width="140" height="60.5" fill="url(#cp)"/>
+<rect x="103" y="172" width="23" height="29.5" fill="url(#st)"/>
+<rect class="o" x="40" y="141" width="140" height="60.5"/>
+<!-- ground floor: snug, sidelight, front door (charcoal pivot), office: all to +2.80 -->
+<rect class="g" x="48" y="172" width="26" height="28"/><path class="m" d="M61 172V200"/>
+<rect class="g" x="81" y="172" width="11" height="28"/>
+<rect x="93" y="172" width="10" height="28" fill="#26282a" stroke="#000" stroke-width="0.4"/><path d="M101.3 180V194" stroke="#9a9a9a" stroke-width="0.5"/>
+<rect class="g" x="126" y="172" width="22" height="28"/><path class="m" d="M137 172V200"/>
+<!-- first floor: flex sliding door, stair slot, en-suite clerestory, main bedroom (transom at +4.30) -->
+<rect class="g" x="48" y="141" width="26" height="27"/><path class="m" d="M61 141V168"/>
+<rect class="g" x="81.5" y="141" width="8" height="27"/>
+<rect class="ob" x="100" y="141" width="12" height="11"/><path class="m" d="M106 141V152"/>
+<rect class="g" x="136" y="141" width="36" height="27"/><path class="m" d="M148 141V168M160 141V168M136 157H172"/>
+
+<!-- GARAGE WING (2.90 in front of the house): stone to +2.70, charcoal rec room above -->
+<rect x="177" y="173" width="82" height="28.5" fill="url(#st)"/>
+<rect x="177" y="141" width="82" height="32" fill="url(#cp)"/>
+<rect class="o" x="177" y="141" width="82" height="60.5"/>
+<path class="m" d="M177 173H259"/>
+<rect class="g" x="200" y="177.5" width="40" height="7.5"/><path class="m" d="M210 177.5V185M220 177.5V185M230 177.5V185"/>
+<rect class="g" x="192" y="141" width="52" height="27"/><path class="m" d="M205 141V168M218 141V168M231 141V168"/>
+
+<!-- LOWER ROOF FASCIA: one line over the house (1.50 overhang) and the garage wing (1.00 overhang) -->
+<rect class="fa" x="34" y="137" width="235" height="4"/>
+<path d="M167 137V141" stroke="#666" stroke-width="0.2"/>
+<!-- timber soffit edge and downlights under the overhangs -->
+<rect x="34" y="141" width="6" height="0.6" fill="url(#tb)"/>
+<g class="lt"><circle cx="49" cy="141.9" r="0.7"/><circle cx="67" cy="141.9" r="0.7"/><circle cx="85" cy="141.9" r="0.7"/><circle cx="103" cy="141.9" r="0.7"/><circle cx="121" cy="141.9" r="0.7"/><circle cx="139" cy="141.9" r="0.7"/><circle cx="157" cy="141.9" r="0.7"/><circle cx="172" cy="141.9" r="0.7"/><circle cx="196" cy="141.9" r="0.7"/><circle cx="220" cy="141.9" r="0.7"/><circle cx="244" cy="141.9" r="0.7"/><circle cx="264" cy="141.9" r="0.7"/></g>
+
+<!-- ENTRY: stone cheek wall (west), porch under the balcony, stone pier (east) -->
+<rect class="sto" x="76" y="172" width="3" height="29.5"/>
+<rect class="sto" x="103" y="172" width="6" height="28"/>
+<!-- balcony: slab fascia +2.80 to +3.20, frameless glass balustrade to +4.25 -->
+<rect class="fa" x="40" y="168" width="69" height="4"/>
+<rect class="gb" x="40" y="157.5" width="69" height="10.5"/>
+<g class="lt"><circle cx="52" cy="172.9" r="0.7"/><circle cx="66" cy="172.9" r="0.7"/><circle cx="86" cy="172.9" r="0.7"/><circle cx="98" cy="172.9" r="0.7"/></g>
+
+<!-- STEPS: 4 risers x 150 from the forecourt (-0.60) to the porch (±0.00), a light in every riser -->
+<rect x="79" y="200" width="30" height="6" fill="#e2e2dc" stroke="#000" stroke-width="0.25"/>
+<path class="m" d="M79 201.5H109M79 203H109M79 204.5H109"/>
+<g class="lt"><rect x="85" y="200.5" width="2" height="0.5"/><rect x="101" y="200.5" width="2" height="0.5"/><rect x="85" y="202" width="2" height="0.5"/><rect x="101" y="202" width="2" height="0.5"/><rect x="85" y="203.5" width="2" height="0.5"/><rect x="101" y="203.5" width="2" height="0.5"/><rect x="85" y="205" width="2" height="0.5"/><rect x="101" y="205" width="2" height="0.5"/></g>
+
+<!-- RAISED BEDS: stone edge 450 high with a concrete coping (top -0.15) -->
+<rect class="sto" x="34" y="201.5" width="45" height="4.5"/>
+<rect class="sto" x="109" y="201.5" width="68" height="4.5"/>
+<rect class="sto" x="177" y="201.5" width="82" height="4.5"/>
+<path d="M34 202H79M109 202H177M177 202H259" stroke="#d8d8d2" stroke-width="0.8"/>
+
+<!-- PLANTING -->
+<g class="sh">
+ <ellipse cx="47" cy="199" rx="5" ry="3"/><ellipse cx="56" cy="199.5" rx="5" ry="2.5"/><ellipse cx="69" cy="199.5" rx="5" ry="2.5"/>
+ <ellipse cx="139" cy="199" rx="5" ry="3"/><ellipse cx="149" cy="199" rx="5" ry="3"/><ellipse cx="164" cy="199" rx="5" ry="3"/>
+ <circle cx="74" cy="195.5" r="3.5"/><circle cx="114" cy="195.5" r="3.5"/>
+</g>
+<g fill="#8fae5f" fill-opacity="0.85" stroke="#56702f" stroke-width="0.2">
+ <ellipse cx="190" cy="198" rx="4.5" ry="3.5"/><ellipse cx="209" cy="198" rx="4.5" ry="3.5"/><ellipse cx="228" cy="198" rx="4.5" ry="3.5"/><ellipse cx="247" cy="198" rx="4.5" ry="3.5"/>
+</g>
+<!-- small trees (outline, so the building reads through) -->
+<path d="M63 202V184M125 202V184M218 206V184" stroke="#5a4630" stroke-width="0.6"/>
+<circle class="tr" cx="63" cy="176" r="9"/>
+<circle class="tr" cx="125" cy="176" r="9"/>
+<circle class="tr" cx="218" cy="170" r="15" style="fill-opacity:0.3"/>
+
+<!-- ground (street front) -->
+<path d="M20 206H290" stroke="#000" stroke-width="0.6"/>
+
+<!-- material tags -->
+<g>
+ <circle class="tg" cx="124" cy="150" r="2.4"/><text class="tt" x="124" y="151">A</text>
+ <circle class="tg" cx="185" cy="155" r="2.4"/><text class="tt" x="185" y="156">A</text>
+ <circle class="tg" cx="118" cy="190" r="2.4"/><text class="tt" x="118" y="191">B</text>
+ <circle class="tg" cx="190" cy="190" r="2.4"/><text class="tt" x="190" y="191">B</text>
+ <path d="M36.5 143.5L38 141.5" stroke="#000" stroke-width="0.2"/><circle class="tg" cx="35" cy="146" r="2.4"/><text class="tt" x="35" y="147">C</text>
+ <circle class="tg" cx="98" cy="162" r="2.4"/><text class="tt" x="98" y="163">D</text>
+ <path d="M187.5 133H186" stroke="#000" stroke-width="0.2"/><circle class="tg" cx="190" cy="133" r="2.4"/><text class="tt" x="190" y="134">E</text>
+</g>
+<text x="55" y="210.5" font-size="1.8" text-anchor="middle">bed P1</text>
+<text x="94" y="210.5" font-size="1.8" text-anchor="middle">entry steps</text>
+<text x="143" y="210.5" font-size="1.8" text-anchor="middle">bed P2</text>
+<text x="235" y="210.5" font-size="1.8" text-anchor="middle">bed P3</text>
+<text x="91.5" y="171" font-size="1.4" text-anchor="middle" fill="#fff">porch</text>
+
+<!-- levels -->
+<g class="lv">
+ <path d="M187 131H276M271 137H276M271 141H276M110 157.5H276M262 168H276M262 172H276M262 200H276M291 206H276" stroke-dasharray="1.5 1"/>
+</g>
+<g class="lx">
+ <text x="278" y="131.7">Upper roof top +6.90</text>
+ <text x="278" y="137.3">Lower roof top +6.30</text>
+ <text x="278" y="142">Soffit / FF window head +5.90</text>
+ <text x="278" y="158.2">Balustrade top +4.25</text>
+ <text x="278" y="168.7">First floor / sill +3.20</text>
+ <text x="278" y="172.9">Soffit / GF head +2.80</text>
+ <text x="278" y="200.7">Ground floor, porch ±0.00</text>
+ <text x="278" y="206.9">Forecourt, street −0.60</text>
+ <text x="40" y="226" text-anchor="middle">W</text><text x="259" y="226" text-anchor="middle">E</text>
+</g>
+
+<!-- dimensions -->
+<g class="d">
+ <path d="M40 214H180M177 220H259"/>
+ <path d="M39 215L41 213M179 215L181 213M176 221L178 219M258 221L260 219"/>
+ <path d="M40 208V216M180 208V216M177 208V222M259 208V222"/>
+ <path d="M28 206V131M27 207L29 205M27 201L29 199M27 173L29 171M27 142L29 140M27 132L29 130M25 206H31M25 200H39M25 172H39M25 141H33M25 131H33"/>
+</g>
+<text class="dt" x="110" y="212.8">14.00 house</text>
+<text class="dt" x="218" y="218.8">8.20 garage wing</text>
+<text class="dt" font-size="1.6" transform="translate(26.6 203) rotate(-90)">0.60</text>
+<text class="dt" transform="translate(26.6 186) rotate(-90)">2.80</text>
+<text class="dt" transform="translate(26.6 156.5) rotate(-90)">3.10</text>
+<text class="dt" font-size="1.8" transform="translate(26.6 136) rotate(-90)">1.00</text>
+
+<text x="150" y="238" font-size="5" font-weight="bold" text-anchor="middle">SOUTH ELEVATION (STREET)  1:100</text>
+
+<g class="nt">
+ <text x="300" y="50" font-weight="bold" font-size="3">NOTES</text>
+ <text x="300" y="56">Orthographic, same scale as the plans.</text>
+ <text x="300" y="60">Depth, front to back: beds and steps;</text>
+ <text x="300" y="64">garage wing (2.90 forward); balcony (2.10);</text>
+ <text x="300" y="68">house face; upper box (4.94 back, +6.90).</text>
+ <text x="300" y="72">The lower roof fascia runs unbroken over the</text>
+ <text x="300" y="76">house and the garage wing at +5.90 / +6.30.</text>
+ <text x="300" y="80">Garage door faces east (see east elevation).</text>
+ <text x="300" y="84">Orange = warm LED downlights in the soffits</text>
+ <text x="300" y="88">and lights in the step risers.</text>
+ <text x="300" y="98" font-weight="bold" font-size="3">MATERIALS</text>
+ <rect x="300" y="101" width="8" height="4" fill="url(#cp)" stroke="#000" stroke-width="0.15"/><text x="310" y="104.2">A  charcoal panel cladding (main)</text>
+ <rect x="300" y="107" width="8" height="4" fill="url(#st)" stroke="#000" stroke-width="0.15"/><text x="310" y="110.2">B  split-face stone: pier, walls, bed edges</text>
+ <rect x="300" y="113" width="8" height="4" fill="url(#tb)" stroke="#000" stroke-width="0.15"/><text x="310" y="116.2">C  timber soffits (undersides; see section)</text>
+ <rect x="300" y="119" width="8" height="4" fill="#bcd6e3" stroke="#3d86b5" stroke-width="0.3"/><text x="310" y="122.2">D  frameless glass balustrade</text>
+ <rect x="300" y="125" width="8" height="4" fill="#232426" stroke="#000" stroke-width="0.15"/><text x="310" y="128.2">E  dark aluminium frames, fascias, doors</text>
+</g>
+
+<g stroke="#000" stroke-width="0.2">
+ <rect x="300" y="236" width="10" height="2" fill="#000"/><rect x="310" y="236" width="10" height="2" fill="#fff"/><rect x="320" y="236" width="10" height="2" fill="#000"/><rect x="330" y="236" width="10" height="2" fill="#fff"/><rect x="340" y="236" width="10" height="2" fill="#000"/>
+</g>
+<g font-size="2.2" text-anchor="middle"><text x="300" y="242">0</text><text x="310" y="242">1</text><text x="320" y="242">2</text><text x="330" y="242">3</text><text x="340" y="242">4</text><text x="350" y="242">5 m</text></g>
+
+<rect x="300" y="248" width="105" height="34" fill="none" stroke="#000" stroke-width="0.35"/>
+<path d="M300 257H405M300 266H405M300 274H405" stroke="#000" stroke-width="0.2"/>
+<text x="303" y="254.5" font-size="3.2" font-weight="bold">FAMILY HOUSE v3 · dark modern · 394 m² gross</text>
+<text x="303" y="263" font-size="3.2" font-weight="bold">04  SOUTH ELEVATION</text>
+<text x="303" y="271.5" font-size="2.6">Scale 1:100 at A3 · levels in metres</text>
+<text x="303" y="279.5" font-size="2.6">2026-10-23 · Rev C · concept design, not for construction</text>
+</svg>

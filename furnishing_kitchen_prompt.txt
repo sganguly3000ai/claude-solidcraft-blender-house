@@ -1,0 +1,16 @@
+You designed this kitchen a few minutes ago (round 1). I built your data and checked it by numbers. Almost everything passed; one thing did not.
+
+In this folder:
+- kitchen_round1.json: your round 1 kitchen, exactly as you wrote it.
+- checks_round1.json: the measured checks of round 1. Every item is inside the kitchen and below the ceiling, nothing overlaps, nothing runs into the house (checked in the CAD model), the walkways are at least 900 mm, and the aisles in front of the counters and the island are 1000 mm. The one failure: in front of the fridge-freezer KT-FRIDGE-1 (x 13100 to 13700, y 6200 to 6800, facing north) the clear depth is 0 mm, because the east run KT-BASE-4 / KT-WT-2 starts right in front of it at y 6800. The fridge doors could not open. (KT-BASE-3 also shows 0 mm, but it is the corner unit, so that is fine.)
+- rooms_kitchen.json, existing_dining.json, ref/: the same inputs as round 1.
+
+What I asked for, in my words: "the kitchen fixtures, cabinets, sink, appliances, faucets etc. they should all be modern."
+
+Please make round 2: fix the fridge so it can be opened and used, with at least 1000 mm clear in front of it, and change as little else as you can. Keep the same style, the same rules as round 1 (everything inside x 9700 to 13700, y 6200 to 9700; aisles at least 1000 mm; the route from the dining area to the passage and D10 at least 900 mm; no tall units in front of the windows below their sills) and the same layout of furnishing.json. If the fix needs a bigger change, say what and why.
+
+Deliverables, saved in this folder:
+- furnishing.json: the whole kitchen, round 2, in the same layout as round 1 (all items, not just the changed ones).
+- README.md, at most 200 words: what you changed and why, and anything still not checked.
+
+Do not make drawings. Write furnishing.json first, then README.md.

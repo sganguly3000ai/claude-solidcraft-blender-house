@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297" font-family="Arial, Helvetica, sans-serif">
+<!--
+  Sample view of the finished home from the south-east street corner: an isometric (parallel) projection built from design.json,
+  drawn with a slight hand-drawn wobble. Not a render, not to scale.
+  Projection (x, y, z in metres): X = 61.6 + 6.928 (x + y), Y = 120.4 + 4 (x - y) - 8 z.
+  Each surface is drawn in its own plane with an SVG matrix:
+    horizontal plane at height z:  matrix(6.928 4 6.928 -4 61.6 120.4-8z), coordinates (x, y)
+    south-facing plane y = c:      matrix(6.928 4 0 -8 61.6+6.928c 120.4-4c), coordinates (x, z)
+    east-facing plane x = c:       matrix(6.928 -4 0 -8 61.6+6.928c 120.4+4c), coordinates (y, z)
+-->
+<defs>
+ <filter id="hand" x="-2%" y="-2%" width="104%" height="104%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" seed="7" result="n"/>
+  <feDisplacementMap in="SourceGraphic" in2="n" scale="0.8" xChannelSelector="R" yChannelSelector="G"/>
+ </filter>
+ <clipPath id="frame"><rect x="15" y="15" width="275" height="230"/></clipPath>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9d6e3"/><stop offset="0.6" stop-color="#eef1f3"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+ <radialGradient id="glow"><stop offset="0" stop-color="#ffd27a" stop-opacity="0.95"/><stop offset="1" stop-color="#ffd27a" stop-opacity="0"/></radialGradient>
+ <linearGradient id="warm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d79b"/><stop offset="1" stop-color="#e9b25f"/></linearGradient>
+ <!-- material patterns, in metres of the face they are used on -->
+ <pattern id="pS" width="1.2" height="0.6" patternUnits="userSpaceOnUse"><rect width="1.2" height="0.6" fill="#4b4e53"/><path d="M0 0H1.2M0 0V0.6" stroke="#2a2c2f" stroke-width="0.03"/></pattern>
+ <pattern id="pE" width="1.2" height="0.6" patternUnits="userSpaceOnUse"><rect width="1.2" height="0.6" fill="#36383c"/><path d="M0 0H1.2M0 0V0.6" stroke="#222326" stroke-width="0.03"/></pattern>
+ <pattern id="sS" width="0.6" height="0.2" patternUnits="userSpaceOnUse"><rect width="0.6" height="0.2" fill="#bdb29b"/><path d="M0 0H0.6M0.2 0V0.1M0.45 0.1V0.2M0 0.1H0.6" stroke="#857b69" stroke-width="0.015"/></pattern>
+ <pattern id="sE" width="0.6" height="0.2" patternUnits="userSpaceOnUse"><rect width="0.6" height="0.2" fill="#a2977f"/><path d="M0 0H0.6M0.2 0V0.1M0.45 0.1V0.2M0 0.1H0.6" stroke="#6f6656" stroke-width="0.015"/></pattern>
+ <pattern id="pv" width="0.9" height="0.6" patternUnits="userSpaceOnUse"><rect width="0.9" height="0.6" fill="#e3e2dc"/><path d="M0 0H0.9M0 0V0.6" stroke="#b9b7ae" stroke-width="0.02"/></pattern>
+ <pattern id="bk" width="0.4" height="0.2" patternUnits="userSpaceOnUse"><rect width="0.4" height="0.2" fill="#8d9095"/><path d="M0 0H0.4M0 0V0.2" stroke="#74777c" stroke-width="0.015"/></pattern>
+</defs>
+<style>
+rect,polygon,path,circle,ellipse{vector-effect:non-scaling-stroke}
+.e{stroke:#151515;stroke-width:0.3;stroke-linejoin:round}
+.gw{fill:url(#warm);stroke:#151515;stroke-width:0.3}
+.fa{fill:#202123;stroke:#000;stroke-width:0.3}
+.tm{fill:#c98d4f}
+.dl{fill:#fff2c0;stroke:#e09a1e;stroke-width:0.2}
+.gl{fill:#cfe2ec;fill-opacity:0.35;stroke:#3d86b5;stroke-width:0.35}
+.sh{fill:#6f9a58;stroke:#2f5222;stroke-width:0.3}
+.gr{fill:#9bb866;stroke:#56702f;stroke-width:0.3}
+.tr{fill:#7fae6a;fill-opacity:0.55;stroke:#2f5222;stroke-width:0.3}
+.ld{fill:none;stroke:#555;stroke-width:0.2}
+.ct{font-size:2.5px}
+.cb{font-size:2.5px;font-weight:bold}
+</style>
+<rect width="420" height="297" fill="#fff"/>
+<rect x="10" y="10" width="400" height="277" fill="none" stroke="#000" stroke-width="0.5"/>
+
+<g clip-path="url(#frame)">
+<rect x="15" y="15" width="275" height="230" fill="url(#sky)"/>
+<g filter="url(#hand)">
+
+ <!-- GROUND -->
+ <g transform="matrix(6.928 4 6.928 -4 61.6 121.6)">
+  <polygon points="-3,0 0,0 0,10 -0.6,10 -0.6,13.9 10.3,13.9 10.3,10 14,10 14,5.4 21.9,5.4 21.9,20 -3,20" fill="#cfe3b8"/>
+  <polygon points="14,4.2 21.9,4.2 21.9,5.4 14,5.4" fill="url(#pv)"/>
+  <polygon points="21.9,-2.9 29,-2.9 29,5.4 21.9,5.4" fill="url(#bk)"/>
+  <polygon points="-0.6,-0.6 3.6,-0.6 3.6,0 -0.6,0" fill="#cfc8b8"/>
+  <polygon points="6.9,-0.6 13.7,-0.6 13.7,0 6.9,0" fill="#cfc8b8"/>
+ </g>
+ <g transform="matrix(6.928 4 6.928 -4.706 61.6 119.553)">
+  <polygon points="21.9,-8 29,-8 29,-2.9 21.9,-2.9" fill="url(#bk)"/>
+ </g>
+ <g transform="matrix(6.928 4 6.928 -4 61.6 125.2)">
+  <polygon points="-3,-8 4.4,-8 4.4,-5.4 2.4,-5.4 2.4,-3.3 -0.6,-3.3 -0.6,0 -3,0" fill="#c4dcaa"/>
+  <polygon points="6.4,-8 21.9,-8 21.9,-5.4 6.4,-5.4" fill="#c4dcaa"/>
+  <polygon points="2.4,-5.4 21.9,-5.4 21.9,-4.4 13.7,-4.4 13.7,-3.3 2.4,-3.3" fill="url(#pv)" stroke="#999" stroke-width="0.2"/>
+  <polygon points="4.4,-8 6.4,-8 6.4,-5.4 4.4,-5.4" fill="url(#pv)" stroke="#999" stroke-width="0.2"/>
+ </g>
+
+ <!-- garden tree behind the house -->
+ <path d="M234.1 120.4V107.2" stroke="#5a4630" stroke-width="0.7"/>
+ <circle class="tr" cx="234.1" cy="97.2" r="10"/>
+
+ <!-- HOUSE east face (x = 14), north of the garage -->
+ <g transform="matrix(6.928 -4 0 -8 158.592 176.4)">
+  <polygon class="e" points="4.2,-0.15 10,-0.15 10,6.5 4.94,6.5 4.94,5.9 4.2,5.9" fill="url(#pE)"/>
+  <rect x="4.6" y="0" width="0.9" height="2.1" fill="#202123"/>
+  <rect class="gw" x="7.2" y="1.05" width="1.5" height="1.75"/>
+  <rect class="gw" x="5.16" y="3.2" width="0.8" height="3.2"/>
+  <rect class="gw" x="7.4" y="3.5" width="1.2" height="2.9"/>
+ </g>
+ <!-- HOUSE south face (y = 0) -->
+ <g transform="matrix(6.928 4 0 -8 61.6 120.4)">
+  <rect class="e" x="0" y="-0.15" width="14" height="6.05" fill="url(#pS)"/>
+  <rect x="6.3" y="-0.15" width="2.3" height="2.95" fill="url(#sS)"/>
+  <rect class="gw" x="0.8" y="0" width="2.6" height="2.8"/><path class="e" d="M2.1 0V2.8"/>
+  <rect class="gw" x="4.1" y="0" width="1.1" height="2.8"/>
+  <rect x="5.3" y="0" width="1" height="2.8" fill="#1d1e20"/><path d="M6.15 0.8V2" stroke="#bbb" stroke-width="0.4"/>
+  <rect class="gw" x="8.6" y="0" width="2.2" height="2.8"/><path class="e" d="M9.7 0V2.8"/>
+  <rect class="gw" x="0.8" y="3.2" width="2.6" height="2.7"/><path class="e" d="M2.1 3.2V5.9"/>
+  <rect class="gw" x="4.15" y="3.2" width="0.8" height="2.7"/>
+  <rect x="6" y="4.8" width="1.2" height="1.1" fill="#e9ddc8" stroke="#151515" stroke-width="0.3"/>
+  <rect class="gw" x="9.6" y="3.2" width="3.6" height="2.7"/><path class="e" d="M10.8 3.2V5.9M12 3.2V5.9M9.6 4.3H13.2"/>
+  <!-- wall washes from the soffit downlights -->
+  <g fill="url(#glow)">
+   <ellipse cx="0.9" cy="5.1" rx="0.5" ry="0.9"/><ellipse cx="2.7" cy="5.1" rx="0.5" ry="0.9"/><ellipse cx="4.5" cy="5.1" rx="0.5" ry="0.9"/><ellipse cx="6.3" cy="5.1" rx="0.5" ry="0.9"/><ellipse cx="8.1" cy="5.1" rx="0.5" ry="0.9"/><ellipse cx="9.9" cy="5.1" rx="0.5" ry="0.9"/><ellipse cx="11.7" cy="5.1" rx="0.5" ry="0.9"/>
+   <ellipse cx="1.2" cy="2.1" rx="0.5" ry="0.8"/><ellipse cx="2.6" cy="2.1" rx="0.5" ry="0.8"/><ellipse cx="4.6" cy="2.1" rx="0.5" ry="0.8"/><ellipse cx="5.8" cy="2.1" rx="0.5" ry="0.8"/>
+  </g>
+ </g>
+
+ <!-- GARAGE WING: south face (y = -2.9) stone + charcoal, east face (x = 21.9) with the side-entry door -->
+ <g transform="matrix(6.928 4 0 -8 41.509 132)">
+  <rect class="e" x="13.7" y="-0.15" width="8.2" height="2.85" fill="url(#sS)"/>
+  <rect class="e" x="13.7" y="2.7" width="8.2" height="3.2" fill="url(#pS)"/>
+  <rect class="gw" x="16" y="1.5" width="4" height="0.75"/>
+  <rect class="gw" x="15.2" y="3.2" width="5.2" height="2.7"/><path class="e" d="M16.5 3.2V5.9M17.8 3.2V5.9M19.1 3.2V5.9"/>
+  <g fill="url(#glow)"><ellipse cx="15.6" cy="5.1" rx="0.5" ry="0.8"/><ellipse cx="18" cy="5.1" rx="0.5" ry="0.8"/><ellipse cx="20.4" cy="5.1" rx="0.5" ry="0.8"/></g>
+ </g>
+ <g transform="matrix(6.928 -4 0 -8 213.323 208)">
+  <rect class="e" x="-2.9" y="-0.15" width="7.1" height="6.05" fill="url(#pE)"/>
+  <rect x="-1.75" y="-0.15" width="4.8" height="2.25" fill="#2a2c2f" stroke="#000" stroke-width="0.3"/>
+  <path d="M-1.75 0.4H3.05M-1.75 0.95H3.05M-1.75 1.5H3.05" stroke="#4b4e52" stroke-width="0.3"/>
+  <rect class="gw" x="-1" y="3.2" width="3.6" height="2.7"/><path class="e" d="M0.2 3.2V5.9M1.4 3.2V5.9"/>
+  <g fill="url(#glow)"><ellipse cx="-1.4" cy="2.6" rx="0.5" ry="0.8"/><ellipse cx="0.6" cy="2.6" rx="0.5" ry="0.8"/><ellipse cx="2.6" cy="2.6" rx="0.5" ry="0.8"/></g>
+ </g>
+
+ <!-- LOWER ROOF RF-1 (+6.30): one plate over the house's south part and the garage wing -->
+ <g transform="matrix(6.928 4 6.928 -4 61.6 70)">
+  <polygon class="e" points="-0.6,-1.5 12.7,-1.5 12.7,-3.9 22.9,-3.9 22.9,4.94 -0.6,4.94" fill="#8b8e93"/>
+ </g>
+ <g transform="matrix(6.928 4 0 -8 51.208 126.4)">
+  <rect class="fa" x="-0.6" y="5.9" width="13.3" height="0.4"/>
+  <rect class="tm" x="-0.6" y="5.82" width="13.3" height="0.08"/>
+  <g class="dl"><circle cx="0.9" cy="5.86" r="0.07"/><circle cx="2.7" cy="5.86" r="0.07"/><circle cx="4.5" cy="5.86" r="0.07"/><circle cx="6.3" cy="5.86" r="0.07"/><circle cx="8.1" cy="5.86" r="0.07"/><circle cx="9.9" cy="5.86" r="0.07"/><circle cx="11.7" cy="5.86" r="0.07"/></g>
+ </g>
+ <g transform="matrix(6.928 4 0 -8 34.581 136)">
+  <rect class="fa" x="12.7" y="5.9" width="10.2" height="0.4"/>
+  <rect class="tm" x="12.7" y="5.82" width="10.2" height="0.08"/>
+  <g class="dl"><circle cx="13.2" cy="5.86" r="0.07"/><circle cx="15.6" cy="5.86" r="0.07"/><circle cx="18" cy="5.86" r="0.07"/><circle cx="20.4" cy="5.86" r="0.07"/><circle cx="22.4" cy="5.86" r="0.07"/></g>
+ </g>
+ <g transform="matrix(6.928 -4 0 -8 220.251 212)">
+  <rect class="fa" x="-3.9" y="5.9" width="8.84" height="0.4" style="fill:#151618"/>
+  <rect class="tm" x="-3.9" y="5.82" width="8.84" height="0.08"/>
+  <g class="dl"><circle cx="-1.4" cy="5.86" r="0.07"/><circle cx="0.6" cy="5.86" r="0.07"/><circle cx="2.6" cy="5.86" r="0.07"/><circle cx="4.4" cy="5.86" r="0.07"/></g>
+ </g>
+
+ <!-- UPPER BOX: step wall above the lower roof, upper roof RF-2 (+6.90) with fascias -->
+ <g transform="matrix(6.928 4 0 -8 95.824 100.64)">
+  <rect class="e" x="0" y="6.3" width="14" height="0.2" fill="url(#pS)"/>
+ </g>
+ <g transform="matrix(6.928 4 6.928 -4 61.6 65.2)">
+  <rect class="e" x="-0.6" y="4.94" width="15.2" height="6.26" fill="#9a9da2"/>
+ </g>
+ <g transform="matrix(6.928 4 0 -8 95.824 100.64)">
+  <rect class="fa" x="-0.6" y="6.5" width="15.2" height="0.4"/>
+ </g>
+ <g transform="matrix(6.928 -4 0 -8 162.749 178.8)">
+  <rect class="fa" x="4.94" y="6.5" width="6.26" height="0.4" style="fill:#151618"/>
+  <rect class="tm" x="4.94" y="6.42" width="6.26" height="0.08"/>
+ </g>
+
+ <!-- ENTRY: porch floor, stone cheek wall, stone pier -->
+ <g transform="matrix(6.928 4 6.928 -4 61.6 120.4)">
+  <polygon points="3.9,-2.1 6.9,-2.1 6.9,0 3.9,0" fill="#e6e4dd" stroke="#888" stroke-width="0.2"/>
+ </g>
+ <g transform="matrix(6.928 -4 0 -8 88.619 136)">
+  <rect class="e" x="-2.1" y="-0.15" width="2.1" height="2.95" fill="url(#sE)"/>
+ </g>
+ <g transform="matrix(6.928 4 0 -8 47.051 128.8)">
+  <rect class="e" x="3.6" y="-0.15" width="0.3" height="2.95" fill="url(#sS)"/>
+  <rect class="e" x="6.3" y="0" width="0.6" height="2.8" fill="url(#sS)"/>
+ </g>
+ <g transform="matrix(6.928 -4 0 -8 109.403 148)">
+  <rect class="e" x="-2.1" y="0" width="0.6" height="2.8" fill="url(#sE)"/>
+ </g>
+
+ <!-- STREET BALCONY: glass at the west end, deck, fascias with the porch downlights, glass front and east end -->
+ <g transform="matrix(6.928 -4 0 -8 61.6 120.4)">
+  <rect class="gl" x="-2.1" y="3.2" width="2.1" height="1.05"/>
+ </g>
+ <g transform="matrix(6.928 4 6.928 -4 61.6 94.8)">
+  <polygon class="e" points="0,-2.1 6.9,-2.1 6.9,0 0,0" fill="#8f8a80"/>
+ </g>
+ <g transform="matrix(6.928 4 0 -8 47.051 128.8)">
+  <rect class="fa" x="0" y="2.8" width="6.9" height="0.4"/>
+  <rect class="tm" x="0" y="2.72" width="6.9" height="0.08"/>
+  <g class="dl"><circle cx="1.2" cy="2.76" r="0.07"/><circle cx="2.6" cy="2.76" r="0.07"/><circle cx="4.6" cy="2.76" r="0.07"/><circle cx="5.8" cy="2.76" r="0.07"/></g>
+ </g>
+ <g transform="matrix(6.928 -4 0 -8 109.403 148)">
+  <rect class="fa" x="-2.1" y="2.8" width="2.1" height="0.4" style="fill:#151618"/>
+  <rect class="gl" x="-2.1" y="3.2" width="2.1" height="1.05"/>
+ </g>
+ <g transform="matrix(6.928 4 0 -8 47.051 128.8)">
+  <rect class="gl" x="0" y="3.2" width="6.9" height="1.05"/>
+ </g>
+
+ <!-- RAISED BEDS (stone edges, top -0.15) -->
+ <g transform="matrix(6.928 4 6.928 -4 61.6 121.6)">
+  <polygon points="-0.6,-3.3 3.9,-3.3 3.9,-2.1 3.6,-2.1 3.6,-0.6 -0.6,-0.6" fill="#8fb173" stroke="#555" stroke-width="0.2"/>
+  <polygon points="6.9,-3.3 13.7,-3.3 13.7,-0.6 6.9,-0.6" fill="#8fb173" stroke="#555" stroke-width="0.2"/>
+  <polygon points="13.7,-4.4 21.9,-4.4 21.9,-2.9 13.7,-2.9" fill="#8fb173" stroke="#555" stroke-width="0.2"/>
+ </g>
+ <g transform="matrix(6.928 4 0 -8 38.738 133.6)">
+  <rect class="e" x="-0.6" y="-0.6" width="4.5" height="0.45" fill="url(#sS)"/>
+  <rect class="e" x="6.9" y="-0.6" width="6.8" height="0.45" fill="url(#sS)"/>
+ </g>
+ <g transform="matrix(6.928 4 0 -8 31.117 138)">
+  <rect class="e" x="13.7" y="-0.6" width="8.2" height="0.45" fill="url(#sS)"/>
+ </g>
+ <g transform="matrix(6.928 -4 0 -8 213.323 208)">
+  <rect class="e" x="-4.4" y="-0.33" width="1.5" height="0.18" fill="url(#sE)"/>
+ </g>
+
+ <!-- ENTRY STEPS: 4 risers with lights, 3 treads (back to front) -->
+ <g transform="matrix(6.928 4 0 -8 47.051 128.8)">
+  <rect class="e" x="3.9" y="-0.15" width="3" height="0.15" fill="#d5d3cc"/>
+  <rect x="4.45" y="-0.1" width="0.3" height="0.05" fill="#ffcf5a"/><rect x="6.05" y="-0.1" width="0.3" height="0.05" fill="#ffcf5a"/>
+ </g>
+ <g transform="matrix(6.928 4 6.928 -4 61.6 121.6)"><polygon points="3.9,-2.5 6.9,-2.5 6.9,-2.1 3.9,-2.1" fill="#eceae4" stroke="#888" stroke-width="0.2"/></g>
+ <g transform="matrix(6.928 4 0 -8 44.28 130.4)">
+  <rect class="e" x="3.9" y="-0.3" width="3" height="0.15" fill="#d5d3cc"/>
+  <rect x="4.45" y="-0.25" width="0.3" height="0.05" fill="#ffcf5a"/><rect x="6.05" y="-0.25" width="0.3" height="0.05" fill="#ffcf5a"/>
+ </g>
+ <g transform="matrix(6.928 4 6.928 -4 61.6 122.8)"><polygon points="3.9,-2.9 6.9,-2.9 6.9,-2.5 3.9,-2.5" fill="#eceae4" stroke="#888" stroke-width="0.2"/></g>
+ <g transform="matrix(6.928 4 0 -8 41.509 132)">
+  <rect class="e" x="3.9" y="-0.45" width="3" height="0.15" fill="#d5d3cc"/>
+  <rect x="4.45" y="-0.4" width="0.3" height="0.05" fill="#ffcf5a"/><rect x="6.05" y="-0.4" width="0.3" height="0.05" fill="#ffcf5a"/>
+ </g>
+ <g transform="matrix(6.928 4 6.928 -4 61.6 124)"><polygon points="3.9,-3.3 6.9,-3.3 6.9,-2.9 3.9,-2.9" fill="#eceae4" stroke="#888" stroke-width="0.2"/></g>
+ <g transform="matrix(6.928 4 0 -8 38.738 133.6)">
+  <rect class="e" x="3.9" y="-0.6" width="3" height="0.15" fill="#d5d3cc"/>
+  <rect x="4.45" y="-0.55" width="0.3" height="0.05" fill="#ffcf5a"/><rect x="6.05" y="-0.55" width="0.3" height="0.05" fill="#ffcf5a"/>
+ </g>
+
+ <!-- PLANTING, back to front -->
+ <g class="sh">
+  <ellipse cx="63.68" cy="131.6" rx="4" ry="2.4"/><ellipse cx="72.68" cy="136.8" rx="4" ry="2.4"/><ellipse cx="47.74" cy="133.2" rx="4" ry="2.5"/>
+ </g>
+ <path d="M57.1 143V129.4" stroke="#5a4630" stroke-width="0.7"/>
+ <circle class="tr" cx="57.1" cy="122.2" r="7.2"/>
+ <g class="sh"><circle cx="65.06" cy="143.2" r="2.8"/><circle cx="92.78" cy="159.2" r="2.8"/></g>
+ <path d="M100.05 167.8V154.2" stroke="#5a4630" stroke-width="0.7"/>
+ <circle class="tr" cx="100.05" cy="147" r="7.2"/>
+ <g class="sh"><ellipse cx="127.4" cy="168.8" rx="4" ry="2.5"/><ellipse cx="112.17" cy="169.6" rx="4" ry="2.5"/><ellipse cx="129.5" cy="179.6" rx="4" ry="2.5"/></g>
+ <g class="gr"><ellipse cx="140.23" cy="193.8" rx="3.5" ry="3"/><ellipse cx="153.4" cy="201.4" rx="3.5" ry="3"/><ellipse cx="166.56" cy="209" rx="3.5" ry="3"/><ellipse cx="179.7" cy="216.6" rx="3.5" ry="3"/></g>
+ <path d="M139.9 222.4V204.8" stroke="#5a4630" stroke-width="0.8"/>
+ <circle class="tr" cx="139.9" cy="193.6" r="12" style="fill-opacity:0.4"/>
+</g>
+</g>
+<rect x="15" y="15" width="275" height="230" fill="none" stroke="#000" stroke-width="0.3"/>
+
+<!-- callouts -->
+<g class="ld">
+ <path d="M295 29L144.3 75"/>
+ <path d="M295 44L72 89.6"/>
+ <path d="M295 59L60.9 106.4"/>
+ <path d="M295 74L57.1 122.2"/>
+ <path d="M295 89L123.95 126"/>
+ <path d="M295 104L94.85 144.4"/>
+ <path d="M295 119L77.5 157.6"/>
+ <path d="M295 134L224.4 162.7"/>
+ <path d="M295 149L166.2 168"/>
+ <path d="M295 164L108 176.8"/>
+ <path d="M295 179L92.8 179.2"/>
+ <path d="M295 194L159.3 192"/>
+ <path d="M295 209L217.5 197.6"/>
+ <path d="M295 224L238.3 223.6"/>
+</g>
+<g fill="#c0392b"><circle cx="144.3" cy="75" r="0.6"/><circle cx="72" cy="89.6" r="0.6"/><circle cx="60.9" cy="106.4" r="0.6"/><circle cx="57.1" cy="122.2" r="0.6"/><circle cx="123.95" cy="126" r="0.6"/><circle cx="94.85" cy="144.4" r="0.6"/><circle cx="77.5" cy="157.6" r="0.6"/><circle cx="224.4" cy="162.7" r="0.6"/><circle cx="166.2" cy="168" r="0.6"/><circle cx="108" cy="176.8" r="0.6"/><circle cx="92.8" cy="179.2" r="0.6"/><circle cx="159.3" cy="192" r="0.6"/><circle cx="217.5" cy="197.6" r="0.6"/><circle cx="238.3" cy="223.6" r="0.6"/></g>
+<g>
+ <text class="cb" x="297" y="30">Stacked flat roofs, thin 400 fascias</text><text class="ct" x="297" y="33.4">upper box +6.90 over the north rooms</text>
+ <text class="cb" x="297" y="45">1.50 cantilevered overhang</text><text class="ct" x="297" y="48.4">timber soffit, warm downlights (C)</text>
+ <text class="cb" x="297" y="60">Street balcony over the entry</text><text class="ct" x="297" y="63.4">frameless glass balustrade (D)</text>
+ <text class="cb" x="297" y="75">Small trees frame the entry</text><text class="ct" x="297" y="78.4">clipped shrubs flank the steps</text>
+ <text class="cb" x="297" y="90">Charcoal panel cladding (A)</text><text class="ct" x="297" y="93.4">floor-to-ceiling glass in dark frames (E)</text>
+ <text class="cb" x="297" y="105">Recessed entry</text><text class="ct" x="297" y="108.4">stone pier and cheek wall, tall dark door</text>
+ <text class="cb" x="297" y="120">Wide entry steps</text><text class="ct" x="297" y="123.4">4 risers x 150, a light in every riser</text>
+ <text class="cb" x="297" y="135">Downlights over the apron</text><text class="ct" x="297" y="138.4">1.00 overhang above the garage door</text>
+ <text class="cb" x="297" y="150">Rec room over the garage</text><text class="ct" x="297" y="153.4">same window band as the house</text>
+ <text class="cb" x="297" y="165">Raised planting beds</text><text class="ct" x="297" y="168.4">stone edges 450 high, low shrubs</text>
+ <text class="cb" x="297" y="180">Paved forecourt and path</text><text class="ct" x="297" y="183.4">large-format pavers, street at −0.60</text>
+ <text class="cb" x="297" y="195">Split-face stone (B)</text><text class="ct" x="297" y="198.4">garage street wall and bed edges</text>
+ <text class="cb" x="297" y="210">Side-entry garage door</text><text class="ct" x="297" y="213.4">faces the driveway, not the street</text>
+ <text class="cb" x="297" y="225">Driveway and turning apron</text><text class="ct" x="297" y="228.4">grass and grasses between drive and house</text>
+</g>
+
+<text x="20" y="254" font-size="5" font-weight="bold">SAMPLE VIEW FROM THE SOUTH-EAST STREET CORNER</text>
+<text x="20" y="260" font-size="2.6">Hand-drawn style isometric built from design.json (same geometry as the drawings); not a render and not to scale.</text>
+<text x="20" y="264" font-size="2.6">Seen from above, so soffit undersides are suggested by the warm edge strip and the light pools; see the elevations and section.</text>
+<text x="20" y="268" font-size="2.6">The covered garden terrace is behind the house and hidden in this view (see the north elevation).</text>
+
+<rect x="300" y="248" width="105" height="34" fill="none" stroke="#000" stroke-width="0.35"/>
+<path d="M300 257H405M300 266H405M300 274H405" stroke="#000" stroke-width="0.2"/>
+<text x="303" y="254.5" font-size="3.2" font-weight="bold">FAMILY HOUSE v3 · dark modern · 394 m² gross</text>
+<text x="303" y="263" font-size="3.2" font-weight="bold">09  SAMPLE VIEW</text>
+<text x="303" y="271.5" font-size="2.6">Isometric from the south-east, no scale</text>
+<text x="303" y="279.5" font-size="2.6">2026-10-23 · Rev C · concept design, not for construction</text>
+</svg>

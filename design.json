@@ -1,0 +1,323 @@
+{
+  "project": "Family house v3: dark modern flat-roof style, L-shaped with side-entry garage and rec room",
+  "units": "mm",
+  "origin": "south-west outside corner of the main house; x = east, y = north, z = up; z = 0 = ground-floor finished floor level",
+  "conventions": {
+    "wall_line": "start and end are the wall CENTRE LINE; thickness is split equally either side",
+    "opening_position": "distance along the wall centre line from the wall start point to the near edge of the opening",
+    "sill_z_head_z": "absolute heights above z = 0 (not relative to the floor), so they can be read straight off the elevations",
+    "outlines": "polygons of [x, y] points in plan, anticlockwise or clockwise, not closed (the last point joins the first)",
+    "feature_zones": "a stretch of a wall clad in another material: from / to = distance along the wall from its start, z_from / z_to = absolute heights",
+    "angles": "degrees"
+  },
+  "levels": {
+    "street_front_ground_and_forecourt": -600,
+    "garden_ground": -150,
+    "garage_floor": -150,
+    "garden_terrace": -20,
+    "porch": 0,
+    "ground_floor": 0,
+    "ground_floor_ceiling": 2800,
+    "rec_room_floor": 2700,
+    "balcony_deck": 3150,
+    "first_floor": 3200,
+    "first_floor_ceiling_south_part": 5900,
+    "first_floor_ceiling_north_part": 6400,
+    "rec_room_ceiling": 5900,
+    "lower_roof_top": 6300,
+    "upper_roof_top": 6900,
+    "terrace_roof_top": 3200,
+    "soffits": {"porch_and_balcony": 2800, "garden_terrace": 2800, "lower_roof_overhangs": 5900, "upper_roof_overhangs": 6500}
+  },
+  "materials": {
+    "charcoal_panel": "dark charcoal panel cladding (through-coloured fibre-cement or aluminium rainscreen panels, 1200 x 600 module, open 10 mm joints, RAL 7021 tone): the main wall material on every facade of the house and the garage wing",
+    "stone": "natural split-face stone, grey-buff, random-length coursed, about 100 mm deep: the entry pier, the entry cheek wall, the ground-floor wall beside the front door, the garage wing's street (south) and crook (west) walls up to +2.70, the two garden-terrace piers",
+    "timber_soffit": "warm timber soffit boards (oiled thermally modified ash or western red cedar, 70 mm boards with 8 mm gaps) under every overhang, the porch / balcony and the terrace roof; downlights set into them",
+    "glass_balustrade": "frameless laminated toughened glass, 1100 high above the deck, in a recessed base channel: the street balcony",
+    "trim": "dark charcoal / black aluminium: window and door frames, fascias (400 deep), copings, flush sectional garage door",
+    "front_door": "charcoal pivot door, 1000 x 2800, with a long vertical bar pull",
+    "steel_post": "150 x 150 steel post, painted charcoal (garden terrace)",
+    "roof_covering": "single-ply membrane, pale grey, on tapered insulation (all flat roofs); the balcony has porcelain pavers on pedestals",
+    "interior_walls": "plastered blockwork / stud, 120 mm",
+    "bed_edging": "split-face stone walling 200 mm thick with a 50 mm precast concrete coping, same stone as the house",
+    "paving": "large-format grey concrete or porcelain pavers, 600 x 900",
+    "driveway": "permeable dark grey block paving"
+  },
+  "floors": [
+    {
+      "id": "GF",
+      "name": "Ground floor (house and garage)",
+      "walls": [
+        {"id": "G-S", "start": [0, 150], "end": [14000, 150], "thickness": 300, "z_base": 0, "height": 3200, "material": "charcoal_panel", "feature_zones": [{"material": "stone", "from": 6300, "to": 8600, "z_from": -150, "z_to": 2800, "note": "stone wall beside the front door, under the porch roof"}]},
+        {"id": "G-N", "start": [0, 9850], "end": [14000, 9850], "thickness": 300, "z_base": 0, "height": 3200, "material": "charcoal_panel"},
+        {"id": "G-W", "start": [150, 300], "end": [150, 9700], "thickness": 300, "z_base": 0, "height": 3200, "material": "charcoal_panel"},
+        {"id": "G-E", "start": [13850, 300], "end": [13850, 9700], "thickness": 300, "z_base": 0, "height": 3200, "material": "charcoal_panel", "note": "y 0-4200 is the separating wall to the garage (fire-resisting)"},
+        {"id": "G-I1", "start": [300, 4940], "end": [11200, 4940], "thickness": 120, "z_base": 0, "height": 2800, "material": "interior"},
+        {"id": "G-I2", "start": [3940, 300], "end": [3940, 4880], "thickness": 120, "z_base": 0, "height": 2800, "material": "interior"},
+        {"id": "G-I3", "start": [6560, 300], "end": [6560, 4880], "thickness": 120, "z_base": 0, "height": 2800, "material": "interior"},
+        {"id": "G-I4", "start": [6620, 2820], "end": [8120, 2820], "thickness": 120, "z_base": 0, "height": 2800, "material": "interior"},
+        {"id": "G-I5", "start": [8180, 300], "end": [8180, 4880], "thickness": 120, "z_base": 0, "height": 2800, "material": "interior"},
+        {"id": "G-I6", "start": [11260, 300], "end": [11260, 6200], "thickness": 120, "z_base": 0, "height": 2800, "material": "interior"},
+        {"id": "G-I7", "start": [11320, 2360], "end": [13700, 2360], "thickness": 120, "z_base": 0, "height": 2800, "material": "interior"},
+        {"id": "G-I8", "start": [11320, 6140], "end": [13700, 6140], "thickness": 120, "z_base": 0, "height": 2800, "material": "interior"},
+        {"id": "GA-S", "start": [13700, -2750], "end": [21900, -2750], "thickness": 300, "z_base": -150, "height": 2850, "material": "stone", "note": "street face of the garage wing"},
+        {"id": "GA-E", "start": [21750, -2600], "end": [21750, 3900], "thickness": 300, "z_base": -150, "height": 2850, "material": "charcoal_panel"},
+        {"id": "GA-N", "start": [14000, 4050], "end": [21900, 4050], "thickness": 300, "z_base": -150, "height": 2850, "material": "charcoal_panel"},
+        {"id": "GA-W", "start": [13850, -2600], "end": [13850, 0], "thickness": 300, "z_base": -150, "height": 2850, "material": "stone", "note": "faces west into the crook of the L, seen from the entry"}
+      ]
+    },
+    {
+      "id": "FF",
+      "name": "First floor (house at +3200, rec room at +2700)",
+      "walls": [
+        {"id": "F-S", "start": [0, 150], "end": [14000, 150], "thickness": 300, "z_base": 3200, "height": 2700, "material": "charcoal_panel", "note": "top = lower roof underside +5900"},
+        {"id": "F-N", "start": [0, 9850], "end": [14000, 9850], "thickness": 300, "z_base": 3200, "height": 3300, "material": "charcoal_panel", "note": "top = upper roof underside +6500"},
+        {"id": "F-W1", "start": [150, 300], "end": [150, 4940], "thickness": 300, "z_base": 3200, "height": 2700, "material": "charcoal_panel", "note": "south part, under the lower roof"},
+        {"id": "F-W2", "start": [150, 4940], "end": [150, 9700], "thickness": 300, "z_base": 3200, "height": 3300, "material": "charcoal_panel", "note": "north part, under the upper roof"},
+        {"id": "F-E1", "start": [13850, 300], "end": [13850, 4940], "thickness": 300, "z_base": 3200, "height": 2700, "material": "charcoal_panel", "note": "y 0-4200 is the party wall with the rec room"},
+        {"id": "F-E2", "start": [13850, 4940], "end": [13850, 9700], "thickness": 300, "z_base": 3200, "height": 3300, "material": "charcoal_panel"},
+        {"id": "F-STEP", "start": [0, 4940], "end": [14000, 4940], "thickness": 300, "z_base": 5900, "height": 600, "material": "charcoal_panel", "note": "where the upper roof steps up: carries the upper roof's south edge; its outside face shows above the lower roof from +6300 to +6500 (roof upstand); needs a steel beam, see structure notes"},
+        {"id": "F-I1", "start": [300, 4940], "end": [4000, 4940], "thickness": 120, "z_base": 3200, "height": 2700, "material": "interior"},
+        {"id": "F-I2", "start": [5100, 4940], "end": [13700, 4940], "thickness": 120, "z_base": 3200, "height": 2700, "material": "interior"},
+        {"id": "F-I3", "start": [300, 6180], "end": [13700, 6180], "thickness": 120, "z_base": 3200, "height": 3200, "material": "interior"},
+        {"id": "F-I4", "start": [3940, 300], "end": [3940, 4880], "thickness": 120, "z_base": 3200, "height": 2700, "material": "interior"},
+        {"id": "F-I5", "start": [5160, 300], "end": [5160, 4880], "thickness": 120, "z_base": 3200, "height": 2700, "material": "interior"},
+        {"id": "F-I6", "start": [5220, 2640], "end": [9080, 2640], "thickness": 120, "z_base": 3200, "height": 2700, "material": "interior"},
+        {"id": "F-I7", "start": [6920, 2700], "end": [6920, 4880], "thickness": 120, "z_base": 3200, "height": 2700, "material": "interior"},
+        {"id": "F-I8", "start": [9140, 300], "end": [9140, 4880], "thickness": 120, "z_base": 3200, "height": 2700, "material": "interior"},
+        {"id": "F-I9", "start": [4460, 6240], "end": [4460, 9700], "thickness": 120, "z_base": 3200, "height": 3200, "material": "interior"},
+        {"id": "F-I10", "start": [8680, 6240], "end": [8680, 9700], "thickness": 120, "z_base": 3200, "height": 3200, "material": "interior"},
+        {"id": "F-I11", "start": [11300, 6240], "end": [11300, 9700], "thickness": 120, "z_base": 3200, "height": 3200, "material": "interior"},
+        {"id": "RE-S", "start": [13700, -2750], "end": [21900, -2750], "thickness": 300, "z_base": 2700, "height": 3200, "material": "charcoal_panel"},
+        {"id": "RE-E", "start": [21750, -2600], "end": [21750, 3900], "thickness": 300, "z_base": 2700, "height": 3200, "material": "charcoal_panel"},
+        {"id": "RE-N", "start": [14000, 4050], "end": [21900, 4050], "thickness": 300, "z_base": 2700, "height": 3200, "material": "charcoal_panel"},
+        {"id": "RE-W", "start": [13850, -2600], "end": [13850, 0], "thickness": 300, "z_base": 2700, "height": 3200, "material": "charcoal_panel"}
+      ]
+    }
+  ],
+  "openings": [
+    {"id": "D01", "kind": "door", "name": "front door (pivot, charcoal, tall)", "wall": "G-S", "position": 5300, "width": 1000, "sill_z": 0, "head_z": 2800},
+    {"id": "W01", "kind": "window", "name": "snug, floor-to-ceiling", "wall": "G-S", "position": 800, "width": 2600, "sill_z": 0, "head_z": 2800},
+    {"id": "W02", "kind": "window", "name": "hall sidelight (fixed, floor-to-ceiling)", "wall": "G-S", "position": 4100, "width": 1100, "sill_z": 0, "head_z": 2800},
+    {"id": "W03", "kind": "window", "name": "office, floor-to-ceiling", "wall": "G-S", "position": 8600, "width": 2200, "sill_z": 0, "head_z": 2800},
+    {"id": "D02", "kind": "door", "name": "living room sliding glass doors to the terrace", "wall": "G-N", "position": 900, "width": 4800, "sill_z": 0, "head_z": 2800},
+    {"id": "D23", "kind": "door", "name": "dining sliding glass doors to the terrace (replaces v2 fixed glazing W04)", "wall": "G-N", "position": 6600, "width": 2800, "sill_z": 0, "head_z": 2800},
+    {"id": "W05", "kind": "window", "name": "kitchen, over the sink", "wall": "G-N", "position": 10700, "width": 2000, "sill_z": 1050, "head_z": 2800},
+    {"id": "W06", "kind": "window", "name": "snug, floor-to-ceiling", "wall": "G-W", "position": 1700, "width": 1400, "sill_z": 0, "head_z": 2800},
+    {"id": "W07", "kind": "window", "name": "living, floor-to-ceiling fixed glazing", "wall": "G-W", "position": 6000, "width": 2400, "sill_z": 0, "head_z": 2800},
+    {"id": "D03", "kind": "door", "name": "garage to utility (fire door, self-closing)", "wall": "G-E", "position": 2500, "width": 900, "sill_z": 0, "head_z": 2100},
+    {"id": "D04", "kind": "door", "name": "utility back door", "wall": "G-E", "position": 4300, "width": 900, "sill_z": 0, "head_z": 2100},
+    {"id": "W08", "kind": "window", "name": "kitchen", "wall": "G-E", "position": 6900, "width": 1500, "sill_z": 1050, "head_z": 2800},
+    {"id": "D05", "kind": "door", "name": "snug", "wall": "G-I1", "position": 1300, "width": 900, "sill_z": 0, "head_z": 2100},
+    {"id": "D06", "kind": "door", "name": "hall to living", "wall": "G-I1", "position": 5100, "width": 900, "sill_z": 0, "head_z": 2100},
+    {"id": "D07", "kind": "door", "name": "office", "wall": "G-I1", "position": 8300, "width": 900, "sill_z": 0, "head_z": 2100},
+    {"id": "D08", "kind": "door", "name": "coats", "wall": "G-I3", "position": 1100, "width": 900, "sill_z": 0, "head_z": 2100},
+    {"id": "D09", "kind": "door", "name": "WC", "wall": "G-I3", "position": 2680, "width": 900, "sill_z": 0, "head_z": 2100},
+    {"id": "D10", "kind": "door", "name": "utility from dining", "wall": "G-I6", "position": 4830, "width": 900, "sill_z": 0, "head_z": 2100},
+    {"id": "D11", "kind": "door", "name": "plant room", "wall": "G-I7", "position": 580, "width": 900, "sill_z": 0, "head_z": 2100},
+    {"id": "W09", "kind": "window", "name": "garage high ribbon window (in the stone wall)", "wall": "GA-S", "position": 2300, "width": 4000, "sill_z": 1500, "head_z": 2250},
+    {"id": "D12", "kind": "door", "name": "garage door (flush sectional, charcoal), faces east", "wall": "GA-E", "position": 850, "width": 4800, "sill_z": -150, "head_z": 2100},
+    {"id": "D13", "kind": "door", "name": "garage side door to the side path", "wall": "GA-N", "position": 6300, "width": 900, "sill_z": -150, "head_z": 2100},
+    {"id": "D24", "kind": "door", "name": "flex room sliding glass door to the street balcony (replaces v2 window W10)", "wall": "F-S", "position": 800, "width": 2600, "sill_z": 3200, "head_z": 5900},
+    {"id": "W11", "kind": "window", "name": "stair void slot window, floor-to-ceiling", "wall": "F-S", "position": 4150, "width": 800, "sill_z": 3200, "head_z": 5900},
+    {"id": "W12", "kind": "window", "name": "en-suite clerestory (obscure glass)", "wall": "F-S", "position": 6000, "width": 1200, "sill_z": 4800, "head_z": 5900},
+    {"id": "W13", "kind": "window", "name": "main bedroom, floor-to-ceiling (lower pane fixed, laminated)", "wall": "F-S", "position": 9600, "width": 3600, "sill_z": 3200, "head_z": 5900},
+    {"id": "W14", "kind": "window", "name": "bedroom 2 (sill clears the terrace roof upstand)", "wall": "F-N", "position": 1000, "width": 2600, "sill_z": 3500, "head_z": 6400},
+    {"id": "W15", "kind": "window", "name": "bedroom 3 (sill clears the terrace roof upstand)", "wall": "F-N", "position": 5200, "width": 2700, "sill_z": 3500, "head_z": 6400},
+    {"id": "W16", "kind": "window", "name": "bathroom clerestory (obscure glass)", "wall": "F-N", "position": 9200, "width": 1200, "sill_z": 4800, "head_z": 6400},
+    {"id": "W17", "kind": "window", "name": "study", "wall": "F-N", "position": 11700, "width": 1600, "sill_z": 3500, "head_z": 6400},
+    {"id": "W18", "kind": "window", "name": "flex room west, floor-to-ceiling", "wall": "F-W1", "position": 1700, "width": 1400, "sill_z": 3200, "head_z": 5900},
+    {"id": "W19", "kind": "window", "name": "landing west, tall slot", "wall": "F-W2", "position": 220, "width": 800, "sill_z": 3200, "head_z": 6400},
+    {"id": "W20", "kind": "window", "name": "bedroom 2 west", "wall": "F-W2", "position": 2360, "width": 1400, "sill_z": 3500, "head_z": 6400},
+    {"id": "W21", "kind": "window", "name": "landing east, tall slot", "wall": "F-E2", "position": 220, "width": 800, "sill_z": 3200, "head_z": 6400},
+    {"id": "W22", "kind": "window", "name": "study east", "wall": "F-E2", "position": 2460, "width": 1200, "sill_z": 3500, "head_z": 6400},
+    {"id": "D14", "kind": "door", "name": "flex room", "wall": "F-I1", "position": 1200, "width": 900, "sill_z": 3200, "head_z": 5300},
+    {"id": "D15", "kind": "door", "name": "linen", "wall": "F-I2", "position": 500, "width": 900, "sill_z": 3200, "head_z": 5300},
+    {"id": "D16", "kind": "door", "name": "main bedroom", "wall": "F-I2", "position": 4500, "width": 900, "sill_z": 3200, "head_z": 5300},
+    {"id": "D17", "kind": "door", "name": "bedroom 2", "wall": "F-I3", "position": 1200, "width": 900, "sill_z": 3200, "head_z": 5300},
+    {"id": "D18", "kind": "door", "name": "bedroom 3", "wall": "F-I3", "position": 5300, "width": 900, "sill_z": 3200, "head_z": 5300},
+    {"id": "D19", "kind": "door", "name": "bathroom", "wall": "F-I3", "position": 8700, "width": 900, "sill_z": 3200, "head_z": 5300},
+    {"id": "D20", "kind": "door", "name": "study", "wall": "F-I3", "position": 11600, "width": 900, "sill_z": 3200, "head_z": 5300},
+    {"id": "D21", "kind": "door", "name": "en-suite", "wall": "F-I8", "position": 600, "width": 900, "sill_z": 3200, "head_z": 5300},
+    {"id": "D22", "kind": "door", "name": "walk-in wardrobe", "wall": "F-I8", "position": 3300, "width": 900, "sill_z": 3200, "head_z": 5300},
+    {"id": "W23", "kind": "window", "name": "rec room south (street)", "wall": "RE-S", "position": 1500, "width": 5200, "sill_z": 3200, "head_z": 5900},
+    {"id": "W24", "kind": "window", "name": "rec room east (over the garage door)", "wall": "RE-E", "position": 1600, "width": 3600, "sill_z": 3200, "head_z": 5900},
+    {"id": "W25", "kind": "window", "name": "rec room north (garden)", "wall": "RE-N", "position": 2000, "width": 4000, "sill_z": 3200, "head_z": 5900},
+    {"id": "W26", "kind": "window", "name": "rec room west (over the entry court; fixed laminated, it is beside the stairwell)", "wall": "RE-W", "position": 300, "width": 2000, "sill_z": 3200, "head_z": 5900}
+  ],
+  "rooms": [
+    {"name": "Snug / playroom", "floor": "GF", "polygon": [[300,300],[3880,300],[3880,4880],[300,4880]], "area_m2": 16.4},
+    {"name": "Entrance hall (with stair)", "floor": "GF", "polygon": [[4000,300],[6500,300],[6500,4880],[4000,4880]], "area_m2": 11.5},
+    {"name": "Coats", "floor": "GF", "polygon": [[6620,300],[8120,300],[8120,2760],[6620,2760]], "area_m2": 3.7},
+    {"name": "Guest WC", "floor": "GF", "polygon": [[6620,2880],[8120,2880],[8120,4880],[6620,4880]], "area_m2": 3.0},
+    {"name": "Office", "floor": "GF", "polygon": [[8240,300],[11200,300],[11200,4880],[8240,4880]], "area_m2": 13.6},
+    {"name": "Plant room", "floor": "GF", "polygon": [[11320,300],[13700,300],[13700,2300],[11320,2300]], "area_m2": 4.8},
+    {"name": "Utility / laundry", "floor": "GF", "polygon": [[11320,2420],[13700,2420],[13700,6080],[11320,6080]], "area_m2": 8.7},
+    {"name": "Living (open plan)", "floor": "GF", "polygon": [[300,5000],[6300,5000],[6300,9700],[300,9700]], "area_m2": 28.2},
+    {"name": "Dining (open plan, incl. passage to utility)", "floor": "GF", "polygon": [[6300,5000],[11200,5000],[11200,6200],[9700,6200],[9700,9700],[6300,9700]], "area_m2": 17.8},
+    {"name": "Kitchen (open to dining)", "floor": "GF", "polygon": [[9700,6200],[13700,6200],[13700,9700],[9700,9700]], "area_m2": 14.0},
+    {"name": "Garage (two cars + stair to rec room)", "floor": "GF", "z": -150, "polygon": [[14000,-2600],[21600,-2600],[21600,3900],[14000,3900]], "area_m2": 49.4},
+    {"name": "Flex room / guest bedroom", "floor": "FF", "polygon": [[300,300],[3880,300],[3880,4880],[300,4880]], "area_m2": 16.4},
+    {"name": "En-suite", "floor": "FF", "polygon": [[5220,300],[9080,300],[9080,2580],[5220,2580]], "area_m2": 8.8},
+    {"name": "Linen", "floor": "FF", "polygon": [[5220,2700],[6860,2700],[6860,4880],[5220,4880]], "area_m2": 3.6},
+    {"name": "Walk-in wardrobe", "floor": "FF", "polygon": [[6980,2700],[9080,2700],[9080,4880],[6980,4880]], "area_m2": 4.6},
+    {"name": "Main bedroom", "floor": "FF", "polygon": [[9200,300],[13700,300],[13700,4880],[9200,4880]], "area_m2": 20.6},
+    {"name": "Landing", "floor": "FF", "polygon": [[300,5000],[13700,5000],[13700,6120],[300,6120]], "area_m2": 15.0},
+    {"name": "Bedroom 2", "floor": "FF", "polygon": [[300,6240],[4400,6240],[4400,9700],[300,9700]], "area_m2": 14.2},
+    {"name": "Bedroom 3", "floor": "FF", "polygon": [[4520,6240],[8620,6240],[8620,9700],[4520,9700]], "area_m2": 14.2},
+    {"name": "Family bathroom", "floor": "FF", "polygon": [[8740,6240],[11240,6240],[11240,9700],[8740,9700]], "area_m2": 8.7},
+    {"name": "Study", "floor": "FF", "polygon": [[11360,6240],[13700,6240],[13700,9700],[11360,9700]], "area_m2": 8.1},
+    {"name": "Recreation room (over the garage)", "floor": "FF", "z": 2700, "polygon": [[14000,-2600],[21600,-2600],[21600,3900],[14000,3900]], "area_m2": 49.4, "area_excluding_stair_opening_m2": 45.9}
+  ],
+  "outdoor_spaces": [
+    {"name": "Entry porch (covered, under the balcony)", "polygon": [[3900,-2100],[6900,-2100],[6900,0],[3900,0]], "z": 0, "area_m2": 6.3},
+    {"name": "Street balcony (off the flex room)", "polygon": [[0,-2100],[6900,-2100],[6900,0],[0,0]], "z": 3150, "area_m2": 14.5},
+    {"name": "Covered garden terrace (off living and dining)", "polygon": [[-600,10000],[10300,10000],[10300,13900],[-600,13900]], "z": -20, "area_m2": 42.5}
+  ],
+  "stairs": [
+    {"id": "ST1", "name": "main stair, hall to landing", "x_from": 4000, "x_to": 5100, "width": 1100, "first_riser_y": 1400, "last_riser_y": 5000, "risers": 16, "riser_height": 200, "goings": 15, "going": 240, "direction": "rises north (+y)", "z_bottom": 0, "z_top": 3200, "type": "straight"},
+    {"id": "ST2", "name": "rec room stair, inside the garage", "x_from": 14000, "x_to": 15000, "width": 1000, "first_riser_y": -1600, "last_riser_y": 1900, "risers": 15, "riser_height": 190, "goings": 14, "going": 250, "direction": "rises north (+y)", "z_bottom": -150, "z_top": 2700, "type": "straight, guard on the open east side"}
+  ],
+  "slabs": [
+    {"id": "SL-GF", "name": "house ground-floor slab", "outline": [[0,0],[14000,0],[14000,10000],[0,10000]], "top_z": 0, "thickness": 250},
+    {"id": "SL-GA", "name": "garage slab", "outline": [[13700,-2900],[21900,-2900],[21900,4200],[14000,4200],[14000,0],[13700,0]], "top_z": -150, "thickness": 200},
+    {"id": "SL-FF", "name": "house first-floor slab (floor zone)", "outline": [[300,300],[13700,300],[13700,9700],[300,9700]], "top_z": 3200, "thickness": 400, "openings": [[[4000,300],[5100,300],[5100,5000],[4000,5000]]]},
+    {"id": "SL-RR", "name": "rec room floor over the garage", "outline": [[14000,-2600],[21600,-2600],[21600,3900],[14000,3900]], "top_z": 2700, "thickness": 450, "openings": [[[14000,-1600],[15000,-1600],[15000,1900],[14000,1900]]]},
+    {"id": "SL-PO", "name": "entry porch slab (stone paving)", "outline": [[3900,-2100],[6900,-2100],[6900,0],[3900,0]], "top_z": 0, "thickness": 200},
+    {"id": "SL-TE", "name": "garden terrace slab (paving)", "outline": [[-600,10000],[10300,10000],[10300,13900],[-600,13900]], "top_z": -20, "thickness": 200, "note": "one 130 step down to the lawn (-150) along its north and west edges"}
+  ],
+  "roofs": [
+    {
+      "id": "RF-1", "name": "lower roof: south part of the house and the whole garage wing (one roof, one fascia line)", "type": "flat, falls 1:60 on tapered insulation",
+      "outline": [[-600,-1500],[12700,-1500],[12700,-3900],[22900,-3900],[22900,4940],[-600,4940]],
+      "top_z": 6300, "underside_z": 5900, "thickness": 400,
+      "fascia": {"material": "trim", "bottom_z": 5900, "top_z": 6300, "depth": 400},
+      "soffit": {"material": "timber_soffit", "z": 5900},
+      "overhangs": [
+        {"edge": "house south (street)", "depth": 1500, "from_wall": "F-S", "over": "the balcony and the planting beds"},
+        {"edge": "house west", "depth": 600, "from_wall": "F-W1"},
+        {"edge": "garage south (street)", "depth": 1000, "from_wall": "RE-S"},
+        {"edge": "garage west, over the crook of the L", "depth": 1000, "from_wall": "RE-W"},
+        {"edge": "garage east, over the garage door", "depth": 1000, "from_wall": "RE-E"},
+        {"edge": "garage north, over the side path", "depth": 740, "from_wall": "RE-N"}
+      ],
+      "outlets": [[2000,4500],[11500,4500],[16000,3500],[20500,3500]],
+      "drainage": "four internal outlets near the step wall and the garage north wall; downpipes boxed inside the walls (no gutters on the fascias)",
+      "covering": "roof_covering"
+    },
+    {
+      "id": "RF-2", "name": "upper roof: north part of the house (sits 600 higher, the top box)", "type": "flat, falls 1:60 on tapered insulation",
+      "outline": [[-600,4940],[14600,4940],[14600,11200],[-600,11200]],
+      "top_z": 6900, "underside_z": 6500, "thickness": 400,
+      "fascia": {"material": "trim", "bottom_z": 6500, "top_z": 6900, "depth": 400},
+      "soffit": {"material": "timber_soffit", "z": 6500},
+      "overhangs": [
+        {"edge": "north (garden)", "depth": 1200, "from_wall": "F-N"},
+        {"edge": "west", "depth": 600, "from_wall": "F-W2"},
+        {"edge": "east", "depth": 600, "from_wall": "F-E2"},
+        {"edge": "south", "depth": 0, "note": "the south edge is the step wall F-STEP; no overhang over the lower roof"}
+      ],
+      "outlets": [[3000,9200],[11000,9200]],
+      "drainage": "two internal outlets; downpipes boxed inside the walls",
+      "covering": "roof_covering"
+    },
+    {
+      "id": "RF-3", "name": "garden terrace roof (extended roof off living and dining)", "type": "flat, falls 1:60 to the north",
+      "outline": [[-600,10000],[10300,10000],[10300,13900],[-600,13900]],
+      "top_z": 3200, "underside_z": 2800, "thickness": 400,
+      "fascia": {"material": "trim", "bottom_z": 2800, "top_z": 3200, "depth": 400},
+      "soffit": {"material": "timber_soffit", "z": 2800},
+      "supports": ["house north wall G-N", "stone pier PR-2", "steel post PO-1", "stone pier PR-3"],
+      "edge_beam": {"line": [[300,13300],[9700,13300]], "note": "steel beam inside the 400 roof zone, spans about 4.7 m between the piers and the post; the roof cantilevers 600 beyond it"},
+      "overhangs": [{"edge": "north beyond the beam", "depth": 600}, {"edge": "west beyond the house wall line", "depth": 600}, {"edge": "east beyond pier PR-3", "depth": 300}],
+      "upstand_at_house_wall_top_z": 3350,
+      "drainage": "concealed box gutter behind the north fascia, one downpipe beside steel post PO-1 to a soakaway",
+      "covering": "roof_covering"
+    }
+  ],
+  "balconies": [
+    {
+      "id": "BA-1", "name": "street balcony over the entry, off the flex room (door D24)",
+      "outline": [[0,-2100],[6900,-2100],[6900,0],[0,0]],
+      "deck_z": 3150, "soffit_z": 2800, "fascia": {"material": "trim", "bottom_z": 2800, "top_z": 3200},
+      "soffit": {"material": "timber_soffit", "z": 2800, "note": "this soffit is the porch ceiling"},
+      "structure": "cantilevers 2100 from the first-floor structure, propped by the entry pier PR-1 (east corner) and the cheek wall FW-1; engineer to design (thermally broken connection)",
+      "drainage": "falls 1:80 to the west; outlet through the west fascia with a short spout and rain chain into bed P1",
+      "covered_by": "RF-1 south overhang (1500 of its 2100 depth)"
+    }
+  ],
+  "balustrades": [
+    {"id": "BL-1", "on": "BA-1", "material": "glass_balustrade", "height_above_deck": 1100, "top_z": 4250,
+     "segments": [[[0,0],[0,-2100]], [[0,-2100],[6900,-2100]], [[6900,-2100],[6900,0]]], "total_length": 11100}
+  ],
+  "piers_and_posts": [
+    {"id": "PR-1", "name": "entry pier (frames the front door, props the balcony corner)", "material": "stone", "outline": [[6300,-2100],[6900,-2100],[6900,-1500],[6300,-1500]], "z_base": 0, "top_z": 2800},
+    {"id": "PR-2", "name": "terrace pier, north-west", "material": "stone", "outline": [[0,13000],[600,13000],[600,13600],[0,13600]], "z_base": -20, "top_z": 2800},
+    {"id": "PR-3", "name": "terrace pier, north-east", "material": "stone", "outline": [[9400,13000],[10000,13000],[10000,13600],[9400,13600]], "z_base": -20, "top_z": 2800},
+    {"id": "PO-1", "name": "terrace steel post (middle of the beam)", "material": "steel_post", "centre": [5000,13300], "size": [150,150], "z_base": -20, "top_z": 2800}
+  ],
+  "feature_walls": [
+    {"id": "FW-1", "name": "entry cheek wall (west side of the porch: makes the recess)", "material": "stone", "start": [3750,-2100], "end": [3750,0], "thickness": 300, "z_base": -150, "top_z": 2800}
+  ],
+  "soffit_lights": {
+    "fitting": "warm-white (2700 K) LED downlight, 80 mm diameter, recessed into the timber soffit, IP65",
+    "items": [
+      {"soffit": "RF-1 house south overhang", "z": 5900, "points": [[900,-750],[2700,-750],[4500,-750],[6300,-750],[8100,-750],[9900,-750],[11700,-750]]},
+      {"soffit": "RF-1 garage south overhang", "z": 5900, "points": [[13200,-3400],[15600,-3400],[18000,-3400],[20400,-3400],[22400,-3400]]},
+      {"soffit": "RF-1 garage east overhang", "z": 5900, "points": [[22400,-1400],[22400,600],[22400,2600],[22400,4400]]},
+      {"soffit": "RF-1 garage west overhang (crook)", "z": 5900, "points": [[13200,-2400]]},
+      {"soffit": "BA-1 porch / balcony underside", "z": 2800, "points": [[1200,-1050],[2600,-1050],[4600,-1050],[5800,-1050]]},
+      {"soffit": "RF-3 garden terrace", "z": 2800, "points": [[1600,11300],[3400,11300],[6600,11300],[8400,11300],[1600,12600],[3400,12600],[6600,12600],[8400,12600]]},
+      {"soffit": "RF-2 north overhang (beyond the terrace roof)", "z": 6500, "points": [[11500,10600],[13500,10600]]}
+    ],
+    "count": 31
+  },
+  "landscape": {
+    "site_assumptions": "street boundary at y = -8000 (8.00 m front garden). The street front is at -600 and the garden at -150: the ground rises 450 from the street to the house. Plot about 33 m wide (x -3000 to 30000); the garden continues north beyond y = 20000.",
+    "planting_beds": [
+      {"id": "P1", "name": "raised bed west of the entry (partly under the balcony: drip irrigated)", "outline": [[-600,-3300],[3900,-3300],[3900,-2100],[3600,-2100],[3600,-600],[-600,-600]], "edge_material": "bed_edging", "edge_thickness": 200, "edge_base_z": -600, "edge_top_z": -150, "edge_height": 450, "soil_z": -200, "edged_sides": "south and west (towards the lawn and forecourt); the west edge stands on the side bank, so its height falls from 450 at the south-west corner to 0 at y = 0"},
+      {"id": "P2", "name": "raised bed east of the entry, in front of the office", "outline": [[6900,-3300],[13700,-3300],[13700,-600],[6900,-600]], "edge_material": "bed_edging", "edge_thickness": 200, "edge_base_z": -600, "edge_top_z": -150, "edge_height": 450, "soil_z": -200, "edged_sides": "south, and the west side beside the steps"},
+      {"id": "P3", "name": "raised bed along the garage's street wall", "outline": [[13700,-4400],[21900,-4400],[21900,-2900],[13700,-2900]], "edge_material": "bed_edging", "edge_thickness": 200, "edge_base_z": "-600 at the west end, -330 at the east end (follows the link path)", "edge_top_z": -150, "edge_height": "450 at the west end, 180 at the east end", "soil_z": -200, "edged_sides": "south"}
+    ],
+    "steps": [
+      {"id": "STP-1", "name": "entry steps, forecourt to porch", "x_from": 3900, "x_to": 6900, "width": 3000, "first_riser_y": -3300, "last_riser_y": -2100, "risers": 4, "riser_height": 150, "treads": 3, "going": 400, "direction": "rises north (+y)", "z_bottom": -600, "z_top": 0, "material": "paving, solid stone treads 50 nosing",
+       "riser_lights": {"fitting": "recessed warm-white LED brick light in each riser", "points_xyz": [[4600,-2100,-75],[6200,-2100,-75],[4600,-2500,-225],[6200,-2500,-225],[4600,-2900,-375],[6200,-2900,-375],[4600,-3300,-525],[6200,-3300,-525]]}}
+    ],
+    "paved_areas": [
+      {"id": "FC", "name": "paved forecourt, with a link east to the driveway", "outline": [[2400,-5400],[21900,-5400],[21900,-4400],[13700,-4400],[13700,-3300],[2400,-3300]], "z": "-600; the link east of x = 13700 rises gently (1:30) to -330 where it meets the driveway", "material": "paving"},
+      {"id": "PA", "name": "front path, street to forecourt", "outline": [[4400,-8000],[6400,-8000],[6400,-5400],[4400,-5400]], "z": -600, "material": "paving"},
+      {"id": "SP", "name": "side path along the garage north wall (back door, garage side door, driveway, garden)", "outline": [[14000,4200],[21900,4200],[21900,5400],[14000,5400]], "z": -150, "material": "paving"},
+      {"id": "G1", "name": "gravel drainage strip along the house front (under the balcony)", "outline": [[-600,-600],[3600,-600],[3600,0],[-600,0]], "z": -150, "material": "washed grey gravel"},
+      {"id": "G2", "name": "gravel drainage strip along the house front", "outline": [[6900,-600],[13700,-600],[13700,0],[6900,0]], "z": -150, "material": "washed grey gravel"},
+      {"id": "PO", "name": "entry porch", "ref": "SL-PO"},
+      {"id": "TE", "name": "garden terrace", "ref": "SL-TE"}
+    ],
+    "driveway": {"id": "DW", "name": "driveway and turning apron to the side-entry garage door", "outline": [[21900,-8000],[29000,-8000],[29000,5400],[21900,5400]], "z": "-600 at the street (y = -8000), rising 1:11 to -150 at y = -2900, level -150 from there north (apron in front of the garage door)", "material": "driveway", "apron_depth_in_front_of_door": 7100},
+    "lawns": [
+      {"id": "L1", "name": "front lawn, west", "outline": [[-3000,-8000],[4400,-8000],[4400,-5400],[2400,-5400],[2400,-3300],[-600,-3300],[-600,0],[-3000,0]], "z": "-600, banking up to -150 along the west side of the house between y = -3300 and y = 0"},
+      {"id": "L2", "name": "front lawn, east", "outline": [[6400,-8000],[21900,-8000],[21900,-5400],[6400,-5400]], "z": -600},
+      {"id": "L3", "name": "garden lawn (with the strip along the house's west wall)", "outline": [[-3000,0],[0,0],[0,10000],[-600,10000],[-600,13900],[10300,13900],[10300,10000],[14000,10000],[14000,5400],[21900,5400],[21900,20000],[-3000,20000]], "z": -150}
+    ],
+    "trees": [
+      {"id": "T1", "label": "small tree", "position": [2300,-2950], "base_z": -200, "height": 3500, "spread": 1800, "role": "frames the entry, west of the steps (bed P1)"},
+      {"id": "T2", "label": "small tree", "position": [8500,-2950], "base_z": -200, "height": 3500, "spread": 1800, "role": "frames the entry, east of the steps (bed P2)"},
+      {"id": "T3", "label": "small tree", "position": [17800,-6500], "base_z": -600, "height": 5000, "spread": 3000, "role": "front lawn, softens the garage wing"},
+      {"id": "T4", "label": "small tree", "position": [12300,12600], "base_z": -150, "height": 4000, "spread": 2500, "role": "garden, beside the terrace"}
+    ],
+    "shrubs": [
+      {"id": "CS1", "label": "clipped round shrub", "position": [3400,-2900], "base_z": -200, "height": 1000, "spread": 700, "role": "flanks the steps"},
+      {"id": "CS2", "label": "clipped round shrub", "position": [7400,-2900], "base_z": -200, "height": 1000, "spread": 700, "role": "flanks the steps"},
+      {"id": "SH1", "label": "low shrubs", "position": [700,-2700], "base_z": -200, "height": 600, "spread": 1000},
+      {"id": "SH2", "label": "low shade shrubs", "position": [1600,-1300], "base_z": -200, "height": 500, "spread": 1000},
+      {"id": "SH3", "label": "low shade shrubs", "position": [2900,-1300], "base_z": -200, "height": 500, "spread": 1000},
+      {"id": "SH4", "label": "low shrubs", "position": [9900,-2600], "base_z": -200, "height": 600, "spread": 1000},
+      {"id": "SH5", "label": "low shrubs", "position": [10900,-1400], "base_z": -200, "height": 600, "spread": 1000},
+      {"id": "SH6", "label": "low shrubs", "position": [12400,-2600], "base_z": -200, "height": 600, "spread": 1000},
+      {"id": "GR1", "label": "ornamental grasses", "position": [15000,-3650], "base_z": -200, "height": 700, "spread": 900},
+      {"id": "GR2", "label": "ornamental grasses", "position": [16900,-3650], "base_z": -200, "height": 700, "spread": 900},
+      {"id": "GR3", "label": "ornamental grasses", "position": [18800,-3650], "base_z": -200, "height": 700, "spread": 900},
+      {"id": "GR4", "label": "ornamental grasses", "position": [20700,-3650], "base_z": -200, "height": 700, "spread": 900}
+    ]
+  },
+  "areas_m2": {"house_gross": 280.0, "garage_gross": 57.0, "rec_room_gross": 57.0, "total_gross": 394.0, "covered_outdoor": {"porch": 6.3, "balcony": 14.5, "garden_terrace": 42.5}}
+}

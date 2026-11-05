@@ -1,0 +1,351 @@
+{
+  "source": "cut from design.json by cut_room_inputs.mjs (numbers copied, not typed)",
+  "units": "mm",
+  "origin": "south-west outside corner of the main house; x = east, y = north, z = up; z = 0 = ground-floor finished floor level",
+  "conventions": "absolute plan coordinates [x, y] in mm; rectangles as x: [from, to], y: [from, to]; heights z in mm above z = 0",
+  "floor_z": 0,
+  "ceiling_z": 2800,
+  "rooms": [
+    {
+      "name": "Living (open plan)",
+      "area_m2": 28.2,
+      "outline": [
+        [
+          300,
+          5000
+        ],
+        [
+          6300,
+          5000
+        ],
+        [
+          6300,
+          9700
+        ],
+        [
+          300,
+          9700
+        ]
+      ],
+      "note": "outline = the inside faces of the walls"
+    },
+    {
+      "name": "Dining (open plan, incl. passage to utility)",
+      "area_m2": 17.8,
+      "outline": [
+        [
+          6300,
+          5000
+        ],
+        [
+          11200,
+          5000
+        ],
+        [
+          11200,
+          6200
+        ],
+        [
+          9700,
+          6200
+        ],
+        [
+          9700,
+          9700
+        ],
+        [
+          6300,
+          9700
+        ]
+      ],
+      "note": "outline = the inside faces of the walls"
+    }
+  ],
+  "openings_touching_these_rooms": [
+    {
+      "id": "D02",
+      "kind": "door",
+      "name": "living room sliding glass doors to the terrace",
+      "wall": "G-N",
+      "x": [
+        900,
+        5700
+      ],
+      "y": [
+        9700,
+        10000
+      ],
+      "sill_z": 0,
+      "head_z": 2800
+    },
+    {
+      "id": "D23",
+      "kind": "door",
+      "name": "dining sliding glass doors to the terrace (replaces v2 fixed glazing W04)",
+      "wall": "G-N",
+      "x": [
+        6600,
+        9400
+      ],
+      "y": [
+        9700,
+        10000
+      ],
+      "sill_z": 0,
+      "head_z": 2800
+    },
+    {
+      "id": "W07",
+      "kind": "window",
+      "name": "living, floor-to-ceiling fixed glazing",
+      "wall": "G-W",
+      "x": [
+        0,
+        300
+      ],
+      "y": [
+        6300,
+        8700
+      ],
+      "sill_z": 0,
+      "head_z": 2800
+    },
+    {
+      "id": "D05",
+      "kind": "door",
+      "name": "snug",
+      "wall": "G-I1",
+      "x": [
+        1600,
+        2500
+      ],
+      "y": [
+        4880,
+        5000
+      ],
+      "sill_z": 0,
+      "head_z": 2100
+    },
+    {
+      "id": "D06",
+      "kind": "door",
+      "name": "hall to living",
+      "wall": "G-I1",
+      "x": [
+        5400,
+        6300
+      ],
+      "y": [
+        4880,
+        5000
+      ],
+      "sill_z": 0,
+      "head_z": 2100
+    },
+    {
+      "id": "D07",
+      "kind": "door",
+      "name": "office",
+      "wall": "G-I1",
+      "x": [
+        8600,
+        9500
+      ],
+      "y": [
+        4880,
+        5000
+      ],
+      "sill_z": 0,
+      "head_z": 2100
+    },
+    {
+      "id": "D10",
+      "kind": "door",
+      "name": "utility from dining",
+      "wall": "G-I6",
+      "x": [
+        11200,
+        11320
+      ],
+      "y": [
+        5130,
+        6030
+      ],
+      "sill_z": 0,
+      "head_z": 2100
+    }
+  ],
+  "neighbours": [
+    {
+      "name": "Snug / playroom",
+      "outline": [
+        [
+          300,
+          300
+        ],
+        [
+          3880,
+          300
+        ],
+        [
+          3880,
+          4880
+        ],
+        [
+          300,
+          4880
+        ]
+      ]
+    },
+    {
+      "name": "Entrance hall (with stair)",
+      "outline": [
+        [
+          4000,
+          300
+        ],
+        [
+          6500,
+          300
+        ],
+        [
+          6500,
+          4880
+        ],
+        [
+          4000,
+          4880
+        ]
+      ]
+    },
+    {
+      "name": "Guest WC",
+      "outline": [
+        [
+          6620,
+          2880
+        ],
+        [
+          8120,
+          2880
+        ],
+        [
+          8120,
+          4880
+        ],
+        [
+          6620,
+          4880
+        ]
+      ]
+    },
+    {
+      "name": "Office",
+      "outline": [
+        [
+          8240,
+          300
+        ],
+        [
+          11200,
+          300
+        ],
+        [
+          11200,
+          4880
+        ],
+        [
+          8240,
+          4880
+        ]
+      ]
+    },
+    {
+      "name": "Utility / laundry",
+      "outline": [
+        [
+          11320,
+          2420
+        ],
+        [
+          13700,
+          2420
+        ],
+        [
+          13700,
+          6080
+        ],
+        [
+          11320,
+          6080
+        ]
+      ]
+    },
+    {
+      "name": "Kitchen (open to dining)",
+      "outline": [
+        [
+          9700,
+          6200
+        ],
+        [
+          13700,
+          6200
+        ],
+        [
+          13700,
+          9700
+        ],
+        [
+          9700,
+          9700
+        ]
+      ]
+    }
+  ],
+  "stairs_nearby": [
+    {
+      "id": "ST1",
+      "name": "main stair, hall to landing",
+      "x_from": 4000,
+      "x_to": 5100,
+      "width": 1100,
+      "first_riser_y": 1400,
+      "last_riser_y": 5000,
+      "risers": 16,
+      "riser_height": 200,
+      "goings": 15,
+      "going": 240,
+      "direction": "rises north (+y)",
+      "z_bottom": 0,
+      "z_top": 3200,
+      "type": "straight"
+    }
+  ],
+  "outside": [
+    {
+      "name": "Covered garden terrace (off living and dining)",
+      "polygon": [
+        [
+          -600,
+          10000
+        ],
+        [
+          10300,
+          10000
+        ],
+        [
+          10300,
+          13900
+        ],
+        [
+          -600,
+          13900
+        ]
+      ],
+      "z": -20,
+      "area_m2": 42.5
+    }
+  ],
+  "interior_walls_material": "plastered blockwork / stud, 120 mm"
+}

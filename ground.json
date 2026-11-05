@@ -1,0 +1,60 @@
+{
+  "project": "Dream It Design It: ground v1 (every lawn blends into its surroundings; no soft ground stands as a step)",
+  "base_design": "design.json (unchanged)",
+  "includes": ["garden.json"],
+  "model_name": "home_v7",
+  "units": "mm; design coordinates (x east, y north, z up, z 0 = ground-floor level)",
+  "rule": "only built things (stone edges, steps, slabs, paving, the driveway) may have a vertical face; lawn, soil and bare base may not stand 100 mm or more above what is next to them (checked by check_ground.mjs)",
+  "grading_note": "a graded piece's top is the LOWER of two side profiles: profile_x (height along x, the same at every y) and profile_y (height along y, the same at every x); a piece with one profile is a simple ramp, with none a flat top. Pieces with the same 'join' become one body whose top is the HIGHER of the pieces (built in SolidCraft as two extruded profiles intersected, then joined).",
+
+  "house_changes": {
+    "landscape_cuts": [
+      { "parts": ["Lawn_L1"], "x": [-3000, -600], "y": [-3300, 0], "why": "the west front lawn's bank (design.json) and the west boundary bank take its place" },
+      { "parts": ["Lawn_L3"], "x": [-3000, -1500], "y": [0, 16500], "why": "the west boundary bank" },
+      { "parts": ["Lawn_L2"], "x": [20900, 21900], "y": [-8000, -5400], "why": "the east front lawn's last metre rises to meet the driveway" },
+      { "parts": ["Lawn_L2"], "x": [13700, 21900], "y": [-6400, -5400], "why": "the east front lawn rises to meet the forecourt link" },
+      { "parts": ["Pave_FC"], "x": [13700, 21900], "y": [-5400, -4400], "why": "the forecourt link rises 1:30 to -330 (design.json), built flat before" },
+      { "parts": ["G_Bed_W_Soil"], "x": [-3000, -1300], "y": [16500, 17500], "why": "the west bed stops at the boundary bank; a stone end edge closes it" },
+      { "parts": ["G_Bed_W_Edge_N"], "x": [-3000, -1500], "y": [17500, 17700], "why": "the same" }
+    ],
+    "removed": [
+      { "parts": ["Shrub_G1"], "why": "it stood on the part of the west bed the boundary bank replaces" }
+    ]
+  },
+
+  "pieces": [
+    { "id": "Gr_Lawn_E", "kind": "lawn", "x": [21900, 29000], "y": [5400, 16500], "top": -150,
+      "note": "1. the undrawn east strip becomes lawn at the garden level, flush with the garden lawn and the driveway's top end" },
+    { "id": "Gr_Bank_E_Edge", "kind": "lawn", "x": [29000, 30000], "y": [-8000, 17700],
+      "profile_x": [[29000, -150], [30000, -600]],
+      "profile_y": [[-8000, -600], [-2900, -150], [16500, -150], [17700, -600]],
+      "note": "3 + 4. east boundary bank: from the driveway's edge (and the east lawn) down to street level at the boundary; along the driveway it follows the driveway's own slope. 1 m wide (1 in 2.2), not the proposed 1.5 m: the driveway reaches x 29000 in Claude's design" },
+    { "id": "Gr_Bed_E_End", "kind": "stone", "x": [21900, 22100], "y": [16500, 17700], "top": -150,
+      "note": "2. a stone end edge closes the east bed's soil" },
+    { "id": "Gr_Bank_E_North", "kind": "lawn", "x": [22100, 29000], "y": [16500, 17700],
+      "profile_y": [[16500, -150], [17700, -600]],
+      "note": "2. beside the beds: the east lawn slopes down to the lower garden (1 in 2.7)" },
+    { "id": "Gr_Lawn_E_Lower", "kind": "lawn", "x": [21900, 30000], "y": [17700, 20000], "top": -600,
+      "note": "2. the lower garden lawn runs on to the east boundary" },
+    { "id": "Gr_Bank_W", "kind": "lawn", "x": [-3000, -1500], "y": [-3300, 17700],
+      "profile_x": [[-3000, -600], [-1500, -150]],
+      "profile_y": [[-3300, -600], [0, -150], [16500, -150], [17700, -600]],
+      "note": "4. west boundary bank, 1.5 m (1 in 3.3), from the front lawn's bank to the lower garden" },
+    { "id": "Gr_Bank_L1", "kind": "lawn", "x": [-1500, -600], "y": [-3300, 0],
+      "profile_y": [[-3300, -600], [0, -150]],
+      "note": "5. design.json: the west front lawn 'banking up to -150 along the west side of the house between y = -3300 and y = 0' (built flat before)" },
+    { "id": "Gr_Bed_W_End", "kind": "stone", "x": [-1500, -1300], "y": [16500, 17500], "top": -150,
+      "note": "4. a stone end edge closes the west bed where the bank begins" },
+    { "id": "Gr_Pave_Link", "kind": "paving", "x": [13700, 21900], "y": [-5400, -4400],
+      "profile_x": [[13700, -600], [21900, -330]],
+      "note": "5. design.json: the forecourt link 'rises gently (1:30) to -330 where it meets the driveway' (built flat before)" },
+    { "id": "Gr_Lawn_L2_Grade_A", "join": "Gr_Lawn_L2_Grade", "kind": "lawn", "x": [20900, 21900], "y": [-8000, -5400],
+      "profile_x": [[20900, -600], [21900, -150]],
+      "profile_y": [[-8000, -600], [-2900, -150]],
+      "note": "6. the east front lawn's last metre rises to the driveway's edge (the driveway's own slope)" },
+    { "id": "Gr_Lawn_L2_Grade_B", "join": "Gr_Lawn_L2_Grade", "kind": "lawn", "x": [13700, 21900], "y": [-6400, -5400],
+      "profile_x": [[13700, -600], [21900, -330]],
+      "profile_y": [[-6400, -600], [-5400, -150]],
+      "note": "6 (found while laying out 5): the raised link would stand above the lawn beside it, so the lawn's last metre rises to the link" }
+  ]
+}

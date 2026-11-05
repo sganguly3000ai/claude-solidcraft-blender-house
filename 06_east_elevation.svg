@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297" font-family="Arial, Helvetica, sans-serif">
+<defs>
+ <pattern id="cp" width="12" height="6" patternUnits="userSpaceOnUse"><rect width="12" height="6" fill="#4a4d52"/><path d="M0 0H12M0 0V6" stroke="#2c2e31" stroke-width="0.2"/></pattern>
+ <pattern id="st" width="6" height="2" patternUnits="userSpaceOnUse"><rect width="6" height="2" fill="#b6ab95"/><path d="M0 0H6M0 1H6M2 0V1M4.6 1V2" stroke="#7d7464" stroke-width="0.12"/></pattern>
+ <pattern id="tb" width="1" height="2" patternUnits="userSpaceOnUse"><rect width="1" height="2" fill="#c08a52"/><path d="M0 0V2" stroke="#8a5d30" stroke-width="0.1"/></pattern>
+</defs>
+<style>
+.o{fill:none;stroke:#000;stroke-width:0.35}
+.g{fill:#d3e3ec;stroke:#1d1d1d;stroke-width:0.4}
+.m{fill:none;stroke:#1d1d1d;stroke-width:0.3}
+.fa{fill:#232426;stroke:#000;stroke-width:0.2}
+.sto{fill:url(#st);stroke:#000;stroke-width:0.25}
+.lt{fill:#ffb52e;stroke:#7a4d00;stroke-width:0.1}
+.tr{fill:#7fae6a;fill-opacity:0.35;stroke:#3f6a30;stroke-width:0.25}
+.lv{fill:none;stroke:#000;stroke-width:0.15}
+.d{fill:none;stroke:#000;stroke-width:0.15}
+.lx{font-size:2.1px}
+.dt{font-size:2.2px;text-anchor:middle}
+.nt{font-size:2.4px}
+.tg{fill:#fff;stroke:#000;stroke-width:0.25}
+.tt{font-size:2.6px;font-weight:bold;text-anchor:middle}
+</style>
+<rect width="420" height="297" fill="#fff"/>
+<rect x="10" y="10" width="400" height="277" fill="none" stroke="#000" stroke-width="0.5"/>
+
+<!-- Viewed from the east (driveway). Left = south. 1 m = 10 mm. Paper X = 85 + 10y, Y = 200 - 10z -->
+
+<!-- FARTHEST: garden terrace roof end (x = 10.30) and its north-east stone pier -->
+<rect class="sto" x="215" y="172" width="6" height="28.2"/>
+<rect class="fa" x="185" y="168" width="39" height="4"/>
+<rect x="185" y="200.2" width="39" height="1.3" fill="#e2e2dc" stroke="#000" stroke-width="0.2"/>
+<g class="lt"><circle cx="198" cy="172.9" r="0.7"/><circle cx="211" cy="172.9" r="0.7"/></g>
+
+<!-- HOUSE east face (x = 14.00), north of the garage: ground floor, upper box to +6.50 -->
+<polygon points="127,201.5 185,201.5 185,135 134.4,135 134.4,141 127,141" fill="url(#cp)" stroke="#000" stroke-width="0.35"/>
+<rect x="131" y="179" width="9" height="21" fill="#26282a" stroke="#000" stroke-width="0.3"/>
+<rect class="g" x="157" y="172" width="15" height="17.5"/>
+<rect class="g" x="136.6" y="136" width="8" height="32"/>
+<rect class="g" x="159" y="136" width="12" height="29"/>
+<!-- upper roof east fascia (0.60 overhang), north overhang downlight -->
+<rect class="fa" x="134.4" y="131" width="62.6" height="4"/>
+<g class="lt"><circle cx="191" cy="135.9" r="0.7"/></g>
+
+<!-- GARAGE WING east face (x = 21.90): flush charcoal sectional door, rec room window above -->
+<rect x="56" y="141" width="71" height="60.5" fill="url(#cp)"/>
+<rect class="o" x="56" y="141" width="71" height="60.5"/>
+<rect x="67.5" y="179" width="48" height="22.5" fill="#2f3134" stroke="#000" stroke-width="0.4"/>
+<path d="M67.5 183.5H115.5M67.5 188H115.5M67.5 192.5H115.5M67.5 197H115.5" stroke="#4b4e52" stroke-width="0.3"/>
+<rect class="g" x="75" y="141" width="36" height="27"/><path class="m" d="M87 141V168M99 141V168"/>
+<!-- lower roof east fascia (1.00 overhang over the garage door): the same +5.90 / +6.30 line as the house -->
+<rect class="fa" x="46" y="137" width="88.4" height="4"/>
+<rect x="46" y="141" width="10" height="0.6" fill="url(#tb)"/>
+<g class="lt"><circle cx="51" cy="141.9" r="0.7"/><circle cx="71" cy="141.9" r="0.7"/><circle cx="91" cy="141.9" r="0.7"/><circle cx="111" cy="141.9" r="0.7"/><circle cx="129" cy="141.9" r="0.7"/></g>
+
+<!-- bed P3 end (stone edge) and grasses -->
+<rect class="sto" x="41" y="201.5" width="15" height="2"/>
+<ellipse cx="48.5" cy="198.5" rx="4.5" ry="3.5" fill="#8fae5f" fill-opacity="0.85" stroke="#56702f" stroke-width="0.2"/>
+<!-- small tree in the garden -->
+<path d="M211 201.5V187" stroke="#5a4630" stroke-width="0.6"/>
+<circle class="tr" cx="211" cy="175" r="12.5"/>
+
+<!-- ground: driveway ramp (1:11) up to the level apron −0.15, then the side path and garden -->
+<path d="M20 204.7L56 201.5H290" fill="none" stroke="#000" stroke-width="0.6"/>
+
+<!-- tags -->
+<g>
+ <circle class="tg" cx="120" cy="155" r="2.4"/><text class="tt" x="120" y="156">A</text>
+ <circle class="tg" cx="150" cy="150" r="2.4"/><text class="tt" x="150" y="151">A</text>
+ <circle class="tg" cx="218" cy="190" r="2.4"/><text class="tt" x="218" y="191">B</text>
+ <path d="M60 143.5V141.8" stroke="#000" stroke-width="0.2"/><circle class="tg" cx="60" cy="146" r="2.4"/><text class="tt" x="60" y="147">C</text>
+ <circle class="tg" cx="91" cy="185.8" r="2.4"/><text class="tt" x="91" y="186.8">E</text>
+</g>
+<text x="91.5" y="177.5" font-size="1.8" text-anchor="middle" fill="#fff">garage door 4.80 x 2.25 (side entry, faces the driveway)</text>
+<text x="135.5" y="177" font-size="1.6" text-anchor="middle" fill="#fff">back door</text>
+<text x="204" y="206" font-size="1.8" text-anchor="middle">covered terrace beyond</text>
+<text x="40" y="208" font-size="1.8" text-anchor="middle">bed P3</text>
+<text x="90" y="206.5" font-size="1.8" text-anchor="middle">driveway apron −0.15</text>
+
+<!-- levels -->
+<g class="lv">
+ <path d="M198 131H230M135 137H230M128 141H230M225 168H230M225 172H230M222 200H230M291 201.5H230" stroke-dasharray="1.5 1"/>
+</g>
+<g class="lx">
+ <text x="232" y="131.7">Upper roof top +6.90</text>
+ <text x="232" y="137.3">Lower roof top +6.30</text>
+ <text x="232" y="141.9">Soffit, rec room head +5.90</text>
+ <text x="232" y="168.5">Terrace roof top, first floor +3.20</text>
+ <text x="232" y="172.9">Soffits, GF head +2.80</text>
+ <text x="232" y="199.4">House ground floor ±0.00</text>
+ <text x="232" y="203.6">Garage, apron, garden −0.15</text>
+ <text x="56" y="226" text-anchor="middle">S</text><text x="224" y="226" text-anchor="middle">N</text>
+</g>
+
+<!-- dimensions -->
+<g class="d">
+ <path d="M56 212H127M85 218H185M185 212H224"/>
+ <path d="M55 213L57 211M126 213L128 211M84 219L86 217M184 219L186 217M184 213L186 211M223 213L225 211"/>
+ <path d="M56 205V214M127 205V214M85 205V220M185 205V220M224 205V214"/>
+ <path d="M32 201.5V137M31 202.5L33 200.5M31 174L33 172M31 142L33 140M31 138L33 136M29 201.5H35M29 173H35M29 141H35M29 137H35"/>
+</g>
+<text class="dt" x="91.5" y="210.8">7.10 garage wing</text>
+<text class="dt" x="135" y="216.8">10.00 house</text>
+<text class="dt" x="204.5" y="210.8">3.90 terrace</text>
+<text class="dt" transform="translate(30.6 187) rotate(-90)">2.85</text>
+<text class="dt" transform="translate(30.6 157) rotate(-90)">3.20</text>
+<text class="dt" font-size="1.4" transform="translate(30.6 139) rotate(-90)">0.40</text>
+
+<text x="150" y="238" font-size="5" font-weight="bold" text-anchor="middle">EAST ELEVATION (DRIVEWAY)  1:100</text>
+
+<g class="nt">
+ <text x="300" y="50" font-weight="bold" font-size="3">NOTES</text>
+ <text x="300" y="56">The garage door faces east onto the 7.10 m</text>
+ <text x="300" y="60">turning apron: the street never sees it.</text>
+ <text x="300" y="64">Garage wing and house share one roof line</text>
+ <text x="300" y="68">(+6.30), one 400 fascia and the same panels</text>
+ <text x="300" y="72">and window band (+3.20 to +5.90).</text>
+ <text x="300" y="76">1.00 overhang over the garage door, with</text>
+ <text x="300" y="80">four downlights over the apron.</text>
+ <text x="300" y="84">The upper box (+6.90) is seen beyond the</text>
+ <text x="300" y="88">garage roof, north of the step line.</text>
+ <text x="300" y="92">Driveway rises 1:11 from the street (−0.60).</text>
+ <text x="300" y="102" font-weight="bold" font-size="3">MATERIALS</text>
+ <rect x="300" y="105" width="8" height="4" fill="url(#cp)" stroke="#000" stroke-width="0.15"/><text x="310" y="108.2">A  charcoal panel cladding</text>
+ <rect x="300" y="111" width="8" height="4" fill="url(#st)" stroke="#000" stroke-width="0.15"/><text x="310" y="114.2">B  split-face stone (pier, bed edge)</text>
+ <rect x="300" y="117" width="8" height="4" fill="url(#tb)" stroke="#000" stroke-width="0.15"/><text x="310" y="120.2">C  timber soffits, warm downlights</text>
+ <rect x="300" y="123" width="8" height="4" fill="#232426" stroke="#000" stroke-width="0.15"/><text x="310" y="126.2">E  dark aluminium: fascias, frames, garage door</text>
+</g>
+
+<g stroke="#000" stroke-width="0.2">
+ <rect x="300" y="236" width="10" height="2" fill="#000"/><rect x="310" y="236" width="10" height="2" fill="#fff"/><rect x="320" y="236" width="10" height="2" fill="#000"/><rect x="330" y="236" width="10" height="2" fill="#fff"/><rect x="340" y="236" width="10" height="2" fill="#000"/>
+</g>
+<g font-size="2.2" text-anchor="middle"><text x="300" y="242">0</text><text x="310" y="242">1</text><text x="320" y="242">2</text><text x="330" y="242">3</text><text x="340" y="242">4</text><text x="350" y="242">5 m</text></g>
+
+<rect x="300" y="248" width="105" height="34" fill="none" stroke="#000" stroke-width="0.35"/>
+<path d="M300 257H405M300 266H405M300 274H405" stroke="#000" stroke-width="0.2"/>
+<text x="303" y="254.5" font-size="3.2" font-weight="bold">FAMILY HOUSE v3 · dark modern · 394 m² gross</text>
+<text x="303" y="263" font-size="3.2" font-weight="bold">06  EAST ELEVATION</text>
+<text x="303" y="271.5" font-size="2.6">Scale 1:100 at A3 · levels in metres</text>
+<text x="303" y="279.5" font-size="2.6">2026-10-23 · Rev C · concept design, not for construction</text>
+</svg>

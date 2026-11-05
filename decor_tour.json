@@ -1,0 +1,960 @@
+{
+  "_about": "STAGING for the video tour (Claude, 2026-11-02; Sam: the rooms the camera sees must look really nice). Not a Claude design run and not part of design.json or the furnishing runs: decor only, for the rooms on the tour path that the furnishing runs left empty (hall, stair, landing, bedroom 3) and finishing touches in the furnished ones (living TV wall, kitchen props). Units mm; x east, y north, z up (ground floor 0, first floor 3200). Built by decorate.py after furnish.py.",
+  "hide": [
+    {
+      "id": "LV-ART-2",
+      "why": "the small print on the living room's west wall gives way to the TV on the slat wall"
+    }
+  ],
+  "items": [
+    {
+      "id": "FL-HALL",
+      "kind": "floor",
+      "x": [
+        4000,
+        6500
+      ],
+      "y": [
+        300,
+        5000
+      ],
+      "z": 0,
+      "h": 4,
+      "colour": "#b08a62",
+      "words": "oiled oak planks, 180 mm wide"
+    },
+    {
+      "id": "FL-LIVING",
+      "kind": "floor",
+      "x": [
+        300,
+        6300
+      ],
+      "y": [
+        5000,
+        9700
+      ],
+      "z": 0,
+      "h": 4,
+      "colour": "#b08a62",
+      "words": "oiled oak planks, 180 mm wide"
+    },
+    {
+      "id": "FL-DINING",
+      "kind": "floor",
+      "x": [
+        6300,
+        11200
+      ],
+      "y": [
+        5000,
+        9700
+      ],
+      "z": 0,
+      "h": 4,
+      "colour": "#b08a62",
+      "words": "oiled oak planks, 180 mm wide"
+    },
+    {
+      "id": "FL-KITCHEN",
+      "kind": "floor",
+      "x": [
+        9700,
+        13700
+      ],
+      "y": [
+        6200,
+        9700
+      ],
+      "z": 0,
+      "h": 4,
+      "colour": "#b08a62",
+      "words": "oiled oak planks, 180 mm wide"
+    },
+    {
+      "id": "FL-LANDING",
+      "kind": "floor",
+      "x": [
+        300,
+        13700
+      ],
+      "y": [
+        5000,
+        6240
+      ],
+      "z": 3200,
+      "h": 4,
+      "colour": "#b08a62",
+      "words": "oiled oak planks, 180 mm wide"
+    },
+    {
+      "id": "FL-BED3",
+      "kind": "floor",
+      "x": [
+        4520,
+        8620
+      ],
+      "y": [
+        6240,
+        9700
+      ],
+      "z": 3200,
+      "h": 4,
+      "colour": "#b08a62",
+      "words": "oiled oak planks, 180 mm wide"
+    },
+    {
+      "id": "HL-RUNNER",
+      "kind": "rug",
+      "x": [
+        5300,
+        6080
+      ],
+      "y": [
+        700,
+        3900
+      ],
+      "z": 0,
+      "h": 10,
+      "colour": "#8a7a68",
+      "words": "wool runner, warm grey",
+      "border": "#5b4b3e"
+    },
+    {
+      "id": "HL-CONSOLE",
+      "kind": "console",
+      "x": [
+        6150,
+        6500
+      ],
+      "y": [
+        1900,
+        3300
+      ],
+      "z": 0,
+      "h": 800,
+      "colour": "#6b4a32",
+      "words": "walnut"
+    },
+    {
+      "id": "HL-MIRROR",
+      "kind": "round mirror",
+      "x": [
+        6470,
+        6500
+      ],
+      "y": [
+        2100,
+        3100
+      ],
+      "z": 1050,
+      "h": 1000,
+      "colour": "#1a1a1a",
+      "words": "black metal frame"
+    },
+    {
+      "id": "HL-VASE",
+      "kind": "vase",
+      "x": [
+        6250,
+        6420
+      ],
+      "y": [
+        2050,
+        2220
+      ],
+      "z": 800,
+      "h": 380,
+      "colour": "#d9cbb3",
+      "words": "stoneware",
+      "branches": true
+    },
+    {
+      "id": "HL-BOWL",
+      "kind": "bowl",
+      "x": [
+        6200,
+        6440
+      ],
+      "y": [
+        2740,
+        2980
+      ],
+      "z": 800,
+      "h": 70,
+      "colour": "#3a3633",
+      "words": "dark stoneware"
+    },
+    {
+      "id": "HL-BOOKS",
+      "kind": "books",
+      "x": [
+        6200,
+        6440
+      ],
+      "y": [
+        2400,
+        2700
+      ],
+      "z": 800,
+      "h": 60,
+      "lying": true
+    },
+    {
+      "id": "HL-LAMP",
+      "kind": "table lamp",
+      "x": [
+        6230,
+        6430
+      ],
+      "y": [
+        3020,
+        3220
+      ],
+      "z": 800,
+      "h": 520,
+      "colour": "#b9a58c"
+    },
+    {
+      "id": "HL-PLANT",
+      "kind": "plant",
+      "x": [
+        6000,
+        6450
+      ],
+      "y": [
+        4250,
+        4700
+      ],
+      "z": 0,
+      "h": 1700,
+      "colour": "#3f6b3a",
+      "pot": "#d9cbb3"
+    },
+    {
+      "id": "HL-ART-1",
+      "kind": "art",
+      "x": [
+        6470,
+        6500
+      ],
+      "y": [
+        3500,
+        4400
+      ],
+      "z": 1200,
+      "h": 1100,
+      "palette": "dusk",
+      "frame": "#1a1a1a"
+    },
+    {
+      "id": "HL-PENDANT",
+      "kind": "pendant globe",
+      "x": [
+        5650,
+        5950
+      ],
+      "y": [
+        2300,
+        2600
+      ],
+      "z": 2100,
+      "h": 300,
+      "ceiling": 2800
+    },
+    {
+      "id": "ST-ART-1",
+      "kind": "art",
+      "x": [
+        4000,
+        4030
+      ],
+      "y": [
+        1700,
+        2300
+      ],
+      "z": 1500,
+      "h": 750,
+      "palette": "sand",
+      "frame": "#a67c52"
+    },
+    {
+      "id": "ST-ART-2",
+      "kind": "art",
+      "x": [
+        4000,
+        4030
+      ],
+      "y": [
+        2500,
+        3100
+      ],
+      "z": 2200,
+      "h": 750,
+      "palette": "olive",
+      "frame": "#a67c52"
+    },
+    {
+      "id": "ST-ART-3",
+      "kind": "art",
+      "x": [
+        4000,
+        4030
+      ],
+      "y": [
+        3300,
+        3900
+      ],
+      "z": 2900,
+      "h": 750,
+      "palette": "clay",
+      "frame": "#a67c52"
+    },
+    {
+      "id": "ST-SCONCE-1",
+      "kind": "sconce",
+      "x": [
+        4000,
+        4100
+      ],
+      "y": [
+        4300,
+        4420
+      ],
+      "z": 3700,
+      "h": 200,
+      "faces": "east"
+    },
+    {
+      "id": "LD-RUNNER",
+      "kind": "rug",
+      "x": [
+        4300,
+        8300
+      ],
+      "y": [
+        5250,
+        5950
+      ],
+      "z": 3200,
+      "h": 10,
+      "colour": "#9b8a76",
+      "words": "wool runner",
+      "border": "#5b4b3e"
+    },
+    {
+      "id": "LD-ART-1",
+      "kind": "art",
+      "x": [
+        6600,
+        7800
+      ],
+      "y": [
+        5000,
+        5030
+      ],
+      "z": 4500,
+      "h": 900,
+      "palette": "dusk",
+      "frame": "#1a1a1a"
+    },
+    {
+      "id": "LV-SLATS",
+      "kind": "slat wall",
+      "x": [
+        300,
+        340
+      ],
+      "y": [
+        5020,
+        6180
+      ],
+      "z": 0,
+      "h": 2800,
+      "colour": "#8a6440",
+      "words": "oiled oak slats"
+    },
+    {
+      "id": "LV-TV",
+      "kind": "tv",
+      "x": [
+        340,
+        380
+      ],
+      "y": [
+        5050,
+        6150
+      ],
+      "z": 900,
+      "h": 640,
+      "faces": "east"
+    },
+    {
+      "id": "LV-PLANT",
+      "kind": "plant",
+      "x": [
+        5600,
+        6150
+      ],
+      "y": [
+        9050,
+        9550
+      ],
+      "z": 0,
+      "h": 1900,
+      "colour": "#3f6b3a",
+      "pot": "#3a3633"
+    },
+    {
+      "id": "LV-BOOKS",
+      "kind": "books",
+      "x": [
+        2950,
+        3250
+      ],
+      "y": [
+        7250,
+        7500
+      ],
+      "z": 380,
+      "h": 60,
+      "lying": true
+    },
+    {
+      "id": "LV-VASE",
+      "kind": "vase",
+      "x": [
+        3450,
+        3600
+      ],
+      "y": [
+        7300,
+        7450
+      ],
+      "z": 380,
+      "h": 260,
+      "colour": "#a8613f",
+      "words": "clay"
+    },
+    {
+      "id": "LV-THROW",
+      "kind": "throw",
+      "x": [
+        3700,
+        4300
+      ],
+      "y": [
+        6300,
+        6850
+      ],
+      "z": 420,
+      "h": 40,
+      "colour": "#6f7350"
+    },
+    {
+      "id": "KT-BOWL",
+      "kind": "fruit bowl",
+      "x": [
+        11650,
+        12000
+      ],
+      "y": [
+        7150,
+        7500
+      ],
+      "z": 900,
+      "h": 110,
+      "colour": "#d9cbb3",
+      "words": "stoneware"
+    },
+    {
+      "id": "KT-VASE",
+      "kind": "vase",
+      "x": [
+        10350,
+        10520
+      ],
+      "y": [
+        7250,
+        7420
+      ],
+      "z": 900,
+      "h": 420,
+      "colour": "#3a3633",
+      "words": "dark stoneware",
+      "branches": true
+    },
+    {
+      "id": "KT-BOARD",
+      "kind": "board",
+      "x": [
+        12350,
+        12800
+      ],
+      "y": [
+        9300,
+        9650
+      ],
+      "z": 900,
+      "h": 25,
+      "colour": "#a67c52",
+      "words": "oak board"
+    },
+    {
+      "id": "KT-JARS",
+      "kind": "jars",
+      "x": [
+        12800,
+        13600
+      ],
+      "y": [
+        9480,
+        9680
+      ],
+      "z": 1490,
+      "h": 220,
+      "colour": "#e3dacb"
+    },
+    {
+      "id": "KT-SHELF-BOWLS",
+      "kind": "bowl",
+      "x": [
+        12850,
+        13250
+      ],
+      "y": [
+        9470,
+        9680
+      ],
+      "z": 1890,
+      "h": 120,
+      "colour": "#b5653f",
+      "words": "terracotta",
+      "stack": 3
+    },
+    {
+      "id": "KT-HERBS",
+      "kind": "plant",
+      "x": [
+        13300,
+        13600
+      ],
+      "y": [
+        9400,
+        9650
+      ],
+      "z": 900,
+      "h": 350,
+      "colour": "#4f7a3f",
+      "pot": "#b5653f"
+    },
+    {
+      "id": "B3-BED",
+      "kind": "bed",
+      "x": [
+        4600,
+        6600
+      ],
+      "y": [
+        7500,
+        9100
+      ],
+      "z": 3200,
+      "h": 550,
+      "colour": "#e8e2d6",
+      "throw": "#6f7350",
+      "head": "west"
+    },
+    {
+      "id": "B3-HEAD",
+      "kind": "headboard",
+      "x": [
+        4520,
+        4600
+      ],
+      "y": [
+        6950,
+        9650
+      ],
+      "z": 3200,
+      "h": 1400,
+      "colour": "#8a6440",
+      "words": "oiled oak slats"
+    },
+    {
+      "id": "B3-NS-1",
+      "kind": "nightstand",
+      "x": [
+        4600,
+        5050
+      ],
+      "y": [
+        6980,
+        7430
+      ],
+      "z": 3200,
+      "h": 500,
+      "colour": "#a67c52"
+    },
+    {
+      "id": "B3-NS-2",
+      "kind": "nightstand",
+      "x": [
+        4600,
+        5050
+      ],
+      "y": [
+        9170,
+        9620
+      ],
+      "z": 3200,
+      "h": 500,
+      "colour": "#a67c52"
+    },
+    {
+      "id": "B3-SCONCE-1",
+      "kind": "sconce",
+      "x": [
+        4600,
+        4700
+      ],
+      "y": [
+        7150,
+        7270
+      ],
+      "z": 4350,
+      "h": 200,
+      "faces": "east"
+    },
+    {
+      "id": "B3-SCONCE-2",
+      "kind": "sconce",
+      "x": [
+        4600,
+        4700
+      ],
+      "y": [
+        9340,
+        9460
+      ],
+      "z": 4350,
+      "h": 200,
+      "faces": "east"
+    },
+    {
+      "id": "B3-RUG",
+      "kind": "rug",
+      "x": [
+        5300,
+        7400
+      ],
+      "y": [
+        7100,
+        9500
+      ],
+      "z": 3200,
+      "h": 10,
+      "colour": "#d8ccb4",
+      "words": "wool, oatmeal",
+      "border": "#a8613f"
+    },
+    {
+      "id": "B3-ART",
+      "kind": "art",
+      "x": [
+        8590,
+        8620
+      ],
+      "y": [
+        7300,
+        8500
+      ],
+      "z": 4300,
+      "h": 900,
+      "palette": "sand",
+      "frame": "#a67c52"
+    },
+    {
+      "id": "B3-DRESSER",
+      "kind": "console",
+      "x": [
+        8150,
+        8620
+      ],
+      "y": [
+        7100,
+        8700
+      ],
+      "z": 3200,
+      "h": 760,
+      "colour": "#a67c52",
+      "words": "oak"
+    },
+    {
+      "id": "B3-PLANT",
+      "kind": "plant",
+      "x": [
+        8100,
+        8600
+      ],
+      "y": [
+        9100,
+        9600
+      ],
+      "z": 3200,
+      "h": 1600,
+      "colour": "#3f6b3a",
+      "pot": "#d9cbb3"
+    },
+    {
+      "id": "B3-BOOKS",
+      "kind": "books",
+      "x": [
+        4680,
+        4980
+      ],
+      "y": [
+        7020,
+        7300
+      ],
+      "z": 3700,
+      "h": 50,
+      "lying": true
+    },
+    {
+      "id": "B3-CHAIR",
+      "kind": "lounge chair",
+      "x": [
+        7300,
+        7950
+      ],
+      "y": [
+        8950,
+        9600
+      ],
+      "z": 3200,
+      "h": 780,
+      "colour": "#9a5b34",
+      "faces": "south"
+    },
+    {
+      "id": "ST-RAIL",
+      "kind": "stair glass rail",
+      "stair": "ST1",
+      "side_x": 5100,
+      "y": [
+        1300,
+        4520
+      ],
+      "h": 900,
+      "note": "Sam 2026-11-02: \"The staircase has no railing - having a modern railing will be good\". Staging: frameless glass panels side-mounted on the stair open side with steel standoffs, a slim oak handrail on top; ends where the first-floor slab and wall W_F_I5 close the side"
+    },
+    {
+      "id": "FL-TOPE",
+      "kind": "floor",
+      "x": [
+        9100,
+        12900
+      ],
+      "y": [
+        5160,
+        8660
+      ],
+      "z": 6900,
+      "h": 4,
+      "colour": "#b08a62",
+      "words": "oiled oak planks, 180 mm wide (second tour, 2026-11-03)"
+    },
+    {
+      "id": "TE-RUG",
+      "kind": "rug",
+      "x": [
+        9900,
+        12100
+      ],
+      "y": [
+        6500,
+        8300
+      ],
+      "z": 6904,
+      "h": 10,
+      "colour": "#d8ccb4",
+      "words": "wool, oatmeal",
+      "border": "#a8613f"
+    },
+    {
+      "id": "TE-CHAIR-1",
+      "kind": "lounge chair",
+      "x": [
+        10200,
+        10850
+      ],
+      "y": [
+        7400,
+        8050
+      ],
+      "z": 6914,
+      "h": 780,
+      "colour": "#9a5b34",
+      "faces": "north"
+    },
+    {
+      "id": "TE-CHAIR-2",
+      "kind": "lounge chair",
+      "x": [
+        11250,
+        11900
+      ],
+      "y": [
+        7400,
+        8050
+      ],
+      "z": 6914,
+      "h": 780,
+      "colour": "#9a5b34",
+      "faces": "north"
+    },
+    {
+      "id": "TE-SIDE",
+      "kind": "nightstand",
+      "x": [
+        10900,
+        11200
+      ],
+      "y": [
+        7550,
+        7900
+      ],
+      "z": 6914,
+      "h": 500,
+      "colour": "#a67c52"
+    },
+    {
+      "id": "TE-BOOKS",
+      "kind": "books",
+      "x": [
+        10930,
+        11170
+      ],
+      "y": [
+        7580,
+        7800
+      ],
+      "z": 7414,
+      "h": 50,
+      "lying": true
+    },
+    {
+      "id": "TE-PLANT-1",
+      "kind": "plant",
+      "x": [
+        9200,
+        9700
+      ],
+      "y": [
+        8050,
+        8550
+      ],
+      "z": 6904,
+      "h": 1600,
+      "colour": "#3f6b3a",
+      "pot": "#d9cbb3"
+    },
+    {
+      "id": "TE-PLANT-2",
+      "kind": "plant",
+      "x": [
+        12300,
+        12800
+      ],
+      "y": [
+        8050,
+        8550
+      ],
+      "z": 6904,
+      "h": 1400,
+      "colour": "#3f6b3a",
+      "pot": "#d9cbb3"
+    },
+    {
+      "id": "TE-CONSOLE",
+      "kind": "console",
+      "x": [
+        12450,
+        12900
+      ],
+      "y": [
+        6300,
+        7700
+      ],
+      "z": 6904,
+      "h": 760,
+      "colour": "#a67c52",
+      "words": "oak"
+    },
+    {
+      "id": "TE-ART",
+      "kind": "art",
+      "x": [
+        12870,
+        12900
+      ],
+      "y": [
+        6400,
+        7600
+      ],
+      "z": 7900,
+      "h": 900,
+      "palette": "dusk",
+      "frame": "#a67c52"
+    },
+    {
+      "id": "TE-VASE",
+      "kind": "vase",
+      "x": [
+        12550,
+        12750
+      ],
+      "y": [
+        7350,
+        7550
+      ],
+      "z": 7664,
+      "h": 350,
+      "colour": "#c98a6b",
+      "branches": true
+    },
+    {
+      "id": "TE-LAMP",
+      "kind": "table lamp",
+      "x": [
+        12560,
+        12760
+      ],
+      "y": [
+        6450,
+        6650
+      ],
+      "z": 7664,
+      "h": 500,
+      "colour": "#d8c6a5"
+    },
+    {
+      "id": "TW-ART",
+      "kind": "art",
+      "wall": "south",
+      "x": [
+        15800,
+        16600
+      ],
+      "y": [
+        5140,
+        5170
+      ],
+      "z": 1300,
+      "h": 800,
+      "palette": "clay",
+      "frame": "#a67c52"
+    }
+  ]
+}

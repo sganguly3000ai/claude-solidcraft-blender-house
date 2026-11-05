@@ -1,0 +1,38 @@
+{
+  "project": "Dream It Design It: garden v1 (the back garden steps down to the front lawn's level)",
+  "base_design": "design.json (unchanged)",
+  "includes": ["addition.json"],
+  "model_name": "home_v6",
+  "units": "mm; design coordinates (x east, y north, z up, z 0 = ground-floor level)",
+  "levels": { "upper_garden": -150, "lower_garden": -600, "note": "lower garden = the street front / front lawn level" },
+  "parameter_limit": "terrace_depth <= 6500 (measured 2026-10-25 with SolidCraft's clash check: 6500 no overlaps; 6600 the terrace slab and plinth run into the beds and the top step; the terrace edge must stay at or south of the beds, y 16500)",
+
+  "house_changes": {
+    "landscape_cuts": [
+      { "parts": ["Lawn_L3"], "x": [-3000, 21900], "y": [16500, 20000], "why": "the garden lawn ends at the drop; the beds, steps and lower lawn take its place" }
+    ]
+  },
+
+  "beds": {
+    "note": "raised flower beds across the garden at the drop, edged in the house's split-face stone like the front beds: flush with the upper lawn, 450 above the lower lawn",
+    "band_y": [16500, 17700], "edge_top": -150, "edge": 200, "soil_top": -200,
+    "beds": [ { "id": "W", "x": [-3000, 3500] }, { "id": "E", "x": [6500, 21900] } ]
+  },
+
+  "steps": {
+    "note": "the same steps as the entry (STP-1): 3 m wide, 3 risers of 150, goings 400, a warm light in every riser; they go DOWN to the north",
+    "x": [3500, 6500], "first_riser_y": 16500, "risers": 3, "riser_height": 150, "going": 400, "top": -150,
+    "riser_lights_x": [4000, 6000]
+  },
+
+  "lower_lawn": [
+    { "id": "main", "x": [-3000, 21900], "y": [17700, 20000] },
+    { "id": "foot", "x": [3500, 6500], "y": [17300, 17700], "note": "at the foot of the steps, between the beds" }
+  ],
+
+  "plants": {
+    "note": "on the beds' soil; shrubs and ornamental grasses alternate, like the front beds",
+    "y": 17050, "spread": 900, "height": { "shrub": 800, "grass": 700 },
+    "x": [-2300, -600, 1100, 2700, 7300, 9000, 10700, 12400, 14100, 15800, 17500, 19200, 20900]
+  }
+}

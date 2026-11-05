@@ -1,0 +1,178 @@
+{
+  "source": "cut from design.json by cut_room_inputs.mjs (numbers copied, not typed)",
+  "units": "mm",
+  "origin": "south-west outside corner of the main house; x = east, y = north, z = up; z = 0 = ground-floor finished floor level",
+  "conventions": "absolute plan coordinates [x, y] in mm; rectangles as x: [from, to], y: [from, to]; heights z in mm above z = 0",
+  "floor_z": 0,
+  "ceiling_z": 2800,
+  "rooms": [
+    {
+      "name": "Kitchen (open to dining)",
+      "area_m2": 14,
+      "outline": [
+        [
+          9700,
+          6200
+        ],
+        [
+          13700,
+          6200
+        ],
+        [
+          13700,
+          9700
+        ],
+        [
+          9700,
+          9700
+        ]
+      ],
+      "note": "outline = the inside faces of the walls"
+    }
+  ],
+  "openings_touching_these_rooms": [
+    {
+      "id": "D23",
+      "kind": "door",
+      "name": "dining sliding glass doors to the terrace (replaces v2 fixed glazing W04)",
+      "wall": "G-N",
+      "x": [
+        6600,
+        9400
+      ],
+      "y": [
+        9700,
+        10000
+      ],
+      "sill_z": 0,
+      "head_z": 2800
+    },
+    {
+      "id": "W05",
+      "kind": "window",
+      "name": "kitchen, over the sink",
+      "wall": "G-N",
+      "x": [
+        10700,
+        12700
+      ],
+      "y": [
+        9700,
+        10000
+      ],
+      "sill_z": 1050,
+      "head_z": 2800
+    },
+    {
+      "id": "W08",
+      "kind": "window",
+      "name": "kitchen",
+      "wall": "G-E",
+      "x": [
+        13700,
+        14000
+      ],
+      "y": [
+        7200,
+        8700
+      ],
+      "sill_z": 1050,
+      "head_z": 2800
+    },
+    {
+      "id": "D10",
+      "kind": "door",
+      "name": "utility from dining",
+      "wall": "G-I6",
+      "x": [
+        11200,
+        11320
+      ],
+      "y": [
+        5130,
+        6030
+      ],
+      "sill_z": 0,
+      "head_z": 2100
+    }
+  ],
+  "neighbours": [
+    {
+      "name": "Utility / laundry",
+      "outline": [
+        [
+          11320,
+          2420
+        ],
+        [
+          13700,
+          2420
+        ],
+        [
+          13700,
+          6080
+        ],
+        [
+          11320,
+          6080
+        ]
+      ]
+    },
+    {
+      "name": "Dining (open plan, incl. passage to utility)",
+      "outline": [
+        [
+          6300,
+          5000
+        ],
+        [
+          11200,
+          5000
+        ],
+        [
+          11200,
+          6200
+        ],
+        [
+          9700,
+          6200
+        ],
+        [
+          9700,
+          9700
+        ],
+        [
+          6300,
+          9700
+        ]
+      ]
+    }
+  ],
+  "stairs_nearby": [],
+  "outside": [
+    {
+      "name": "Covered garden terrace (off living and dining)",
+      "polygon": [
+        [
+          -600,
+          10000
+        ],
+        [
+          10300,
+          10000
+        ],
+        [
+          10300,
+          13900
+        ],
+        [
+          -600,
+          13900
+        ]
+      ],
+      "z": -20,
+      "area_m2": 42.5
+    }
+  ],
+  "interior_walls_material": "plastered blockwork / stud, 120 mm"
+}

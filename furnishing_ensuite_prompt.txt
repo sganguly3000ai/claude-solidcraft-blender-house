@@ -1,0 +1,41 @@
+You designed this family home earlier. It is now a measured 3D model, and I am furnishing it room by room. This run is for ONE room: the en-suite bathroom of the main bedroom, on the first floor. Your own design gave it 3.86 x 2.28 m (8.8 m2), ceiling +5.90.
+
+In this folder:
+- rooms_ensuite.json: the en-suite as data, cut from your own design.json (millimetres, absolute coordinates; z = 0 is the ground floor, so this floor is at z 3200 and the ceiling at z 5900). It has the room outline (inside faces of the walls), its door D21 from the main bedroom (east wall), its window W12 (a high clerestory with obscure glass, sill at z 4800, on the south wall) and the neighbouring rooms. W11 in the file is the stair's window next door, not in this room.
+- ref/front.jpg and ref/side.jpg: the two photos whose style the house follows (outside only).
+
+What I asked for, in my words: "the bathroom fixtures, sink, faucet, cabinet, shower etc should be modern."
+
+Please design the en-suite:
+1. Fixtures: a vanity with one or two basins, modern faucets, a mirror or mirror cabinet, a WC (wall-hung is fine), and a walk-in shower with a glass screen and a fixed overhead shower plus a hand shower. A bath only if it truly fits as well.
+2. Storage and finishes: a tall cabinet or niches if there is room, a heated towel rail, and the tiles or stone for the shower and floor described in words in the items' "material".
+3. Lighting: downlights (wet-rated in the shower), a light at the mirror, and maybe a low night light.
+4. Style: modern, warm and calm, in earth-tone colours (sand, clay, terracotta, olive, warm greys) and natural materials (stone, oak, ceramic, brushed metal), to suit a dark charcoal, stone and timber house like the one in the photos.
+
+Rules:
+- Everything stays inside the en-suite outline (x 5220 to 9080, y 300 to 2580) and between the floor (z 3200) and the ceiling (z 5900).
+- Keep at least 700 mm clear in front of the WC, the basins and the shower entry, and a clear 900 x 900 mm square inside the door D21 (the data does not say which way it swings).
+- Use real, typical sizes (vanity top about 850 above the floor, WC about 400 high).
+- A basin or faucet that sits on or in a vanity top is its own item whose box starts at the top (z_base = the vanity top) and goes up. A shower screen is a thin box (10 mm glass).
+- Keep it honest: if something does not fit, say so instead of forcing it.
+
+Deliverables, saved in this folder:
+- furnishing.json, in this layout:
+  {
+    "rooms": ["En-suite"],
+    "items": [
+      {"id": "EN-VAN-1", "room": "En-suite", "kind": "vanity", "name": "wall-hung double vanity",
+       "x": [from, to], "y": [from, to], "z_base": 3200, "height": 850, "faces": "north",
+       "material": "plain words, e.g. oak veneer drawers, honed travertine top", "colour": "#rrggbb", "note": ""}
+    ],
+    "lights": [
+      {"id": "DN-EN-1", "room": "En-suite", "kind": "downlight | wall light | strip | night light",
+       "x": 0, "y": 0, "z": 5900, "colour_temperature_k": 2700, "note": ""}
+    ],
+    "walkways": [{"between": ["D21", "shower"], "narrowest_mm": 0, "where": [x, y]}],
+    "not_checked": ["plain sentences: what you did not check"]
+  }
+  Every item is a box in plan: x and y give its footprint (absolute coordinates, from smaller to larger), z_base and height give its bottom and height (absolute z). "faces" is the side a person stands at or uses it from (north, south, east, west), or "none". Ids are unique; use kinds such as vanity, basin, faucet, mirror, mirror cabinet, wc, shower tray, shower screen, shower head, hand shower, towel rail, tall cabinet, niche, bath.
+- README.md, at most 300 words: the layout in plain words, why it works, and what you would ask me.
+
+Do not make drawings: I will draw the plan from your data. Write furnishing.json first, then README.md.

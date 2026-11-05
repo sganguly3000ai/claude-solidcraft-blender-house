@@ -1,0 +1,13 @@
+# made by the steps in README.md (rebuild them, do not commit them)
+home_v*_script.json
+home_v*_expected.json
+home_v*_checks.json
+home_v*_ground.json
+home_v*.obj
+home_v*.step
+home_v*.solidcraft
+*_check.json
+*.blend
+*.blend1
+furnishing_*_checks.json
+furnishing_*_plan.svg
