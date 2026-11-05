@@ -1,6 +1,7 @@
 # Dream It, Design It: the files
 
-These are the files from the video *Dream It, Design It* (YouTube channel **Unfolding It**). With them you can rebuild
+These are the files from the video **[Claude Opus 5.5, SolidCraft, Blender: Dream Home Build Workflow](https://youtu.be/MCdjk965ThA)**
+(YouTube channel **Unfolding It**). With them you can rebuild
 the same house on your own computer: the CAD model in SolidCraft, then the furnished, decorated scene in Blender.
 
 The same data files always give the same model. You do not need Claude to rebuild it: Claude's part is already done,
